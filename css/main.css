@@ -4,7 +4,7 @@
    * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
    * body `font-size` is set using `em` units.
    */
-/* line 106, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 106, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 100%;
   line-height: 1.5em;
@@ -1523,10 +1523,26 @@ perspective effects (not including the modals and the overlay).
   background: #dd6004;
   position: fixed;
   z-index: 1;
-  padding: 10px 0;
+  padding: 5px 0;
   width: 100%;
 }
-/* line 18, ../sass/_custom.scss */
+@media (min-width: 768px) {
+  /* line 12, ../sass/_custom.scss */
+  .siteHeader {
+    padding: 10px 0;
+  }
+}
+/* line 23, ../sass/_custom.scss */
+.siteHeader nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 23, ../sass/_custom.scss */
+  .siteHeader nav {
+    display: inline;
+  }
+}
+/* line 29, ../sass/_custom.scss */
 .siteHeader ul {
   display: -webkit-flex;
   display: flex;
@@ -1537,36 +1553,61 @@ perspective effects (not including the modals and the overlay).
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background: #FFFFFF;
+  margin-bottom: -4px;
 }
-@media (min-width: 1024px) {
-  /* line 18, ../sass/_custom.scss */
+@media (min-width: 768px) {
+  /* line 29, ../sass/_custom.scss */
   .siteHeader ul {
     -webkit-flex-direction: row;
     flex-direction: row;
+    background: none;
+    margin-bottom: 0;
   }
 }
-/* line 26, ../sass/_custom.scss */
+/* line 42, ../sass/_custom.scss */
 .siteHeader ul li {
   margin: 0 1em;
+  padding: 5px;
 }
-/* line 28, ../sass/_custom.scss */
+@media (min-width: 768px) {
+  /* line 42, ../sass/_custom.scss */
+  .siteHeader ul li {
+    padding: 0;
+  }
+}
+/* line 50, ../sass/_custom.scss */
 .siteHeader ul li.active {
   border-bottom: 1px solid #FFFFFF;
 }
-/* line 31, ../sass/_custom.scss */
+/* line 53, ../sass/_custom.scss */
 .siteHeader ul li > a {
-  color: #FFFFFF;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
-@media (min-width: 1024px) {
-  /* line 38, ../sass/_custom.scss */
+@media (min-width: 768px) {
+  /* line 53, ../sass/_custom.scss */
+  .siteHeader ul li > a {
+    color: #FFFFFF;
+  }
+}
+/* line 64, ../sass/_custom.scss */
+.siteHeader .btn-responsive-menu {
+  cursor: pointer;
+  text-align: right;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  /* line 64, ../sass/_custom.scss */
   .siteHeader .btn-responsive-menu {
     display: none;
   }
 }
 
-/* line 46, ../sass/_custom.scss */
+/* line 77, ../sass/_custom.scss */
 .speak ul {
   display: -webkit-flex;
   display: flex;
@@ -1580,61 +1621,61 @@ perspective effects (not including the modals and the overlay).
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-/* line 53, ../sass/_custom.scss */
+/* line 84, ../sass/_custom.scss */
 .speak li {
   -webkit-flex-basis: 270px;
   flex-basis: 270px;
 }
 
-/* line 60, ../sass/_custom.scss */
+/* line 91, ../sass/_custom.scss */
 section {
   max-width: 1024px;
   padding: 1em;
   margin: 0 auto;
   padding-top: 60px;
 }
-/* line 66, ../sass/_custom.scss */
+/* line 96, ../sass/_custom.scss */
 section h1 {
   text-align: center;
   border-bottom: 1px solid #CCCCCC;
   margin-bottom: 50px;
 }
-/* line 72, ../sass/_custom.scss */
+/* line 101, ../sass/_custom.scss */
 section.title {
   text-align: center;
 }
-/* line 74, ../sass/_custom.scss */
+/* line 103, ../sass/_custom.scss */
 section.title img.yooxlabs {
   width: 100px;
   height: auto;
   display: block;
   margin: 30px auto 40px auto;
 }
-/* line 80, ../sass/_custom.scss */
+/* line 109, ../sass/_custom.scss */
 section.title h1 {
   text-transform: uppercase;
   border: 0 none;
 }
-/* line 84, ../sass/_custom.scss */
+/* line 112, ../sass/_custom.scss */
 section.title h1 .techevent {
   display: block;
   font-size: 16px;
   line-height: 16px;
 }
-/* line 89, ../sass/_custom.scss */
+/* line 117, ../sass/_custom.scss */
 section.title h1 .subtitle {
   color: #dd6004;
 }
-/* line 93, ../sass/_custom.scss */
+/* line 121, ../sass/_custom.scss */
 section.title .imgMeet {
   position: relative;
 }
-/* line 95, ../sass/_custom.scss */
+/* line 123, ../sass/_custom.scss */
 section.title .imgMeet img {
   width: 100%;
   height: auto;
 }
-/* line 99, ../sass/_custom.scss */
+/* line 127, ../sass/_custom.scss */
 section.title .imgMeet figcaption {
   bottom: 10px;
   position: absolute;
@@ -1644,50 +1685,50 @@ section.title .imgMeet figcaption {
   width: 100%;
   font-size: 12px;
 }
-/* line 111, ../sass/_custom.scss */
+/* line 139, ../sass/_custom.scss */
 section.speak img {
   border-radius: 50%;
   width: 170px;
   height: 170px;
 }
-/* line 116, ../sass/_custom.scss */
+/* line 144, ../sass/_custom.scss */
 section.speak li {
   text-align: center;
   padding-bottom: 30px;
   cursor: pointer;
 }
-/* line 123, ../sass/_custom.scss */
+/* line 151, ../sass/_custom.scss */
 section.sched table {
   width: 100%;
   text-align: center;
 }
-/* line 127, ../sass/_custom.scss */
+/* line 155, ../sass/_custom.scss */
 section.sched table tbody tr {
   border-bottom: 1px solid #CCCCCC;
 }
-/* line 129, ../sass/_custom.scss */
+/* line 157, ../sass/_custom.scss */
 section.sched table tbody tr:nth-child(odd) {
   background-color: #F0F0F0;
 }
-/* line 132, ../sass/_custom.scss */
+/* line 160, ../sass/_custom.scss */
 section.sched table tbody tr td {
   padding: 10px 5px;
 }
-/* line 140, ../sass/_custom.scss */
+/* line 167, ../sass/_custom.scss */
 section.map {
   max-width: 100%;
 }
-/* line 143, ../sass/_custom.scss */
+/* line 169, ../sass/_custom.scss */
 section.map .section {
   max-width: 1024px;
   margin: 0 auto;
 }
-/* line 149, ../sass/_custom.scss */
+/* line 174, ../sass/_custom.scss */
 section.end {
   text-align: center;
 }
 
-/* line 154, ../sass/_custom.scss */
+/* line 179, ../sass/_custom.scss */
 .map {
   position: relative;
   padding-top: 30px;
@@ -1697,7 +1738,7 @@ section.end {
 }
 
 /* iframe posizionato in maniera assoluta */
-/* line 162, ../sass/_custom.scss */
+/* line 190, ../sass/_custom.scss */
 .map iframe {
   position: absolute;
   top: 0;
@@ -1706,7 +1747,7 @@ section.end {
   height: 100%;
 }
 
-/* line 170, ../sass/_custom.scss */
+/* line 198, ../sass/_custom.scss */
 button.joinUs {
   background: none;
   border: 3px solid #dd6004;
@@ -1717,7 +1758,7 @@ button.joinUs {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 170, ../sass/_custom.scss */
+  /* line 198, ../sass/_custom.scss */
   button.joinUs {
     width: auto;
     display: inline-block;
