@@ -1,0 +1,41 @@
+@mixin clearfix() {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin hidden() {
+	display: none !important;
+	visibility: hidden;
+}
+
+@mixin visuallyHidden($focusable: false) {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	@if (focusable) {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+}
+
+@mixin invisible() {
+	visibility: hidden;
+}
+
+@mixin resetList() {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}

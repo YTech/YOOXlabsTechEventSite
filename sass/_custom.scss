@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.outdatedBrowser {
+	display: none;
+	.no-flexbox & {
+		display: block;
+	}
+}
+
+.siteHeader {
+	ul {
+
+		@include display-flex();
+		@include justify-content(center);
+
+		@include resetList();
+
+		li {
+			margin: 0 1em;
+		}
+
+	}
+}

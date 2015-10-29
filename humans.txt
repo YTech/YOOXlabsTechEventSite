@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Erika Tebaldi -- Front-End Developer -- @grumpolo
+    Andrea Verlicchi -- Senior Front-End Functional Architect -- @verlok
+
+# THANKS
+
+    Carlo Panzi -- Tech Leader
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
