@@ -15,11 +15,9 @@
     z-index: 1;
     padding: 5px 0;
     width: 100%;
-    
     @include breakpoint(tablet) {
-        padding: 10px 0;   
+        padding: 10px 0;
     }
-    
     nav {
         display: none;
         @include breakpoint(tablet) {
@@ -33,7 +31,6 @@
         @include resetList();
         background: $white;
         margin-bottom: -4px;
-        
         @include breakpoint(tablet) {
             @include flex-direction(row);
             background: none;
@@ -42,11 +39,9 @@
         li {
             margin: 0 1em;
             padding: 5px;
-            
             @include breakpoint(tablet) {
-                padding: 0;   
+                padding: 0;
             }
-            
             &.active {
                 border-bottom: 1px solid $white;
             }
@@ -54,9 +49,8 @@
                 color: $black;
                 text-decoration: none;
                 text-transform: uppercase;
-                
                 @include breakpoint(tablet) {
-                   color: $white;
+                    color: $white;
                 }
             }
         }
@@ -85,8 +79,6 @@
         @include flex-basis(270px);
     }
 }
-
-.siteHeader {}
 
 section {
     max-width: 1024px;
@@ -203,4 +195,27 @@ button.joinUs {
         width: auto;
         display: inline-block;
     }
+}
+
+#yoox {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 400px;
+    height: 400;
+    overflow: hidden;
+}
+
+.gm-style-iw * {
+    display: block;
+    width: 100%;
+}
+
+.gm-style-iw h4,
+.gm-style-iw p {
+    margin: 0;
+    padding: 0;
+}
+
+.gm-style-iw a {
+    color: #4272db;
 }

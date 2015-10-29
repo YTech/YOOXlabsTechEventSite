@@ -70,19 +70,28 @@ perspective effects (not including the modals and the overlay).
 
 /* Content styles */
 .md-content {
-	color: $black;
-	background: $white;
-	position: relative;
-	border-radius: 3px;
-	margin: 0 auto;
     @include display-flex();
     @include flex-direction(column);
     @include resetList();
     @include justify-content(space-around);
     @include align-items(center);
+	color: $black;
+	background: $white;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+    font-size: 0.8em;
     
     img {
         width: 100px;  
+    }
+    
+    .md-close{
+        background: none;
+        border: none;
+        position: absolute;
+        right: 0;
+        font-size: 20px;
     }
 }
 
