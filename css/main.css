@@ -1813,22 +1813,23 @@ button.joinUs {
   padding-bottom: 400px;
   height: 400;
   overflow: hidden;
+  width: 100%;
 }
 
-/* line 220, ../sass/_custom.scss */
+/* line 221, ../sass/_custom.scss */
 .gm-style-iw * {
   display: block;
   width: 100%;
 }
 
-/* line 225, ../sass/_custom.scss */
+/* line 226, ../sass/_custom.scss */
 .gm-style-iw h4,
 .gm-style-iw p {
   margin: 0;
   padding: 0;
 }
 
-/* line 231, ../sass/_custom.scss */
+/* line 232, ../sass/_custom.scss */
 .gm-style-iw a {
   color: #4272db;
 }
