@@ -1,25 +1,271 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+strong,
+b{
+  font-weight: normal;
+    font-weight: 400;
+}
 
 .outdatedBrowser {
-	display: none;
-	.no-flexbox & {
-		display: block;
-	}
+    display: none;
+    .no-flexbox & {
+        display: block;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        top: 30px;
+        z-index: 4;
+        font-size: 1.3em;
+        
+        p{
+            border-top: 2px solid $color-master;  
+            border-bottom: 2px solid $color-master;  
+            background: $light-grey;
+            padding: 0.5em 0;
+            
+            a{
+                color: $color-master;
+            }
+        }
+    }
 }
 
 .siteHeader {
-	ul {
+    background: $color-master;
+    position: fixed;
+    z-index: 1;
+    padding: 5px 0;
+    width: 100%;
+    @include breakpoint(tablet) {
+        padding: 10px 0;
+    }
+    nav {
+        display: none;
+        
+        @include breakpoint(tablet) {
+            display: inline;
+        }
+    }
+    ul {
+        @include display-flex();
+        @include justify-content(center);
+        @include flex-direction(column);
+        @include resetList();
+        background: $white;
+        margin-bottom: -4px;
+        @include breakpoint(tablet) {
+            @include flex-direction(row);
+            background: none;
+            margin-bottom: 0;
+        }
+        li {
+            margin: 0 1em;
+            padding: 5px;
+            @include breakpoint(tablet) {
+                padding: 0;
+            }
+            &.active {
+                border-bottom: 1px solid $white;
+            }
+            > a {
+                color: $black;
+                text-decoration: none;
+                text-transform: uppercase;
+                @include breakpoint(tablet) {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-responsive-menu {
+        cursor: pointer;
+        text-align: right;
+        color: $white;
+        font-size: 20px;
+        padding-right: 20px;
+        @include breakpoint(tablet) {
+            display: none;
+        }
+    }
+}
 
-		@include display-flex();
-		@include justify-content(center);
+.speak {
+    ul {
+        @include display-flex();
+        @include flex-direction(row);
+        @include resetList();
+        @include flex-wrap(wrap);
+        @include justify-content(space-around);
+    }
+    li {
+        @include flex-basis(270px);
+    }
+}
 
-		@include resetList();
+section {
+    max-width: 1024px;
+    padding: 1em;
+    margin: 0 auto;
+    padding-top: 60px;
+    h1 {
+        text-align: center;
+        border-bottom: 1px solid $grey;
+        margin-bottom: 50px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: normal;
+        font-weight: 400;
+    }
+    &.title {
+        text-align: center;
+        img.yooxlabs {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 30px auto 40px auto;
+        }
+        h1 {
+            text-transform: uppercase;
+            border: 0 none;
+            margin-bottom: 25px;
+            
+            .techevent {
+                display: block;
+                font-size: 26px;
+                line-height: 36px;
+            }
+            .subtitle {
+                color: $color-master;
+                font-size: 40px;
+            }
+            
+        }
+        .data{
+            font-size: 18px; 
+        }
+        .imgMeet {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            margin-top: 15px;
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+            figcaption {
+                bottom: 10px;
+                position: absolute;
+                color: white;
+                text-shadow: 0 0 5px black;
+                text-align: center;
+                width: 100%;
+                font-size: 12px;
+            }
+        }
+    }
+    &.speak {
+        img {
+            width: 170px;
+            height: 170px;
+            margin-bottom: 10px;
+        }
+        li {
+            text-align: center;
+            margin-bottom: 40px;
+            cursor: pointer;
+            
+            &:hover {
+                img{
+                   opacity: 0.8; 
+                }
 
-		li {
-			margin: 0 1em;
-		}
+            }
+        }
+    }
+    &.sched {
+        table {
+            width: 100%;
+            text-align: center;
+            tbody {
+                tr {
+                    border-bottom: 1px solid $grey;
+                    &:nth-child(odd) {
+                        background-color: $light-grey;
+                    }
+                    td {
+                        padding: 10px 5px;
+                    }
+                }
+            }
+        }
+    }
+    &.map {
+        max-width: 100%;
+        .section {
+            max-width: 1024px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .map  {
+            position: relative;
+            padding-bottom: 400px;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &.end {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
 
-	}
+
+button.joinUs {
+    @include btnJoin();
+    width: 100%;
+    display: block;
+    @include breakpoint(tablet) {
+        width: auto;
+        display: inline-block;
+    }
+}
+
+#yoox {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 400px;
+    height: 400;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gm-style-iw * {
+    display: block;
+    width: 100%;
+}
+
+.gm-style-iw h4,
+.gm-style-iw p {
+    margin: 0;
+    padding: 0;
+}
+
+.gm-style-iw a {
+    color: #4272db;
 }

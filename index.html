@@ -5,24 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>YOOXlabs Technology Event - FrontEnd Matters</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width">
         <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
-
+        <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="icons/style.css">
         <link rel="stylesheet" href="css/main.css">
         <script>
         /*! modernizr 3.1.0 (Custom Build) | MIT *
          * http://modernizr.com/download/?-flexbox !*/
         !function(e,n,t){function r(e){var n=C.className,t=Modernizr._config.classPrefix||"";if(w&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),w?C.className.baseVal=n:C.className=n)}function o(e,n){return typeof e===n}function s(){var e,n,t,r,s,i,a;for(var l in x)if(x.hasOwnProperty(l)){if(e=[],n=x[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function i(e,n){return!!~(""+e).indexOf(n)}function a(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):w?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function l(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function f(e,n){return function(){return e.apply(n,arguments)}}function u(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?f(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function p(){var e=n.body;return e||(e=a(w?"svg":"body"),e.fake=!0),e}function c(e,t,r,o){var s,i,l,f,u="modernizr",d=a("div"),c=p();if(parseInt(r,10))for(;r--;)l=a("div"),l.id=o?o[r]:u+(r+1),d.appendChild(l);return s=a("style"),s.type="text/css",s.id="s"+u,(c.fake?c:d).appendChild(s),c.appendChild(d),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),d.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",f=C.style.overflow,C.style.overflow="hidden",C.appendChild(c)),i=t(d,e),c.fake?(c.parentNode.removeChild(c),C.style.overflow=f,C.offsetHeight):d.parentNode.removeChild(d),!!i}function m(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(d(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];o--;)s.push("("+d(n[o])+":"+r+")");return s=s.join(" or "),c("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function f(){d&&(delete z.style,delete z.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var u=m(e,r);if(!o(u,"undefined"))return u}for(var d,p,c,h,v,y=["modernizr","tspan"];!z.style;)d=!0,z.modElem=a(y.shift()),z.style=z.modElem.style;for(c=e.length,p=0;c>p;p++)if(h=e[p],v=z.style[h],i(h,"-")&&(h=l(h)),z.style[h]!==t){if(s||o(r,"undefined"))return f(),"pfx"==n?h:!0;try{z.style[h]=r}catch(g){}if(z.style[h]!=v)return f(),"pfx"==n?h:!0}return f(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+b.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),u(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var g=[],C=n.documentElement,w="svg"===C.nodeName.toLowerCase(),x=[],_={_version:"3.1.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){x.push({name:e,fn:n,options:t})},addAsyncTest:function(e){x.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=_,Modernizr=new Modernizr;var S="Moz O ms Webkit",b=_._config.usePrefixes?S.split(" "):[];_._cssomPrefixes=b;var E=_._config.usePrefixes?S.toLowerCase().split(" "):[];_._domPrefixes=E;var P={elem:a("modernizr")};Modernizr._q.push(function(){delete P.elem});var z={style:P.elem.style};Modernizr._q.unshift(function(){delete z.style}),_.testAllProps=v,_.testAllProps=y,Modernizr.addTest("flexbox",y("flexBasis","1px",!0)),s(),r(g),delete _.addTest,delete _.addAsyncTest;for(var N=0;N<Modernizr._q.length;N++)Modernizr._q[N]();e.Modernizr=Modernizr}(window,document);
         </script>
+        
+        
     </head>
     <body>
 
 	    <header class="siteHeader">
+            <div class="btn-responsive-menu"><span class="icon-th-menu"></span></div>
 		    <nav>
 			    <ul>
 				    <li><a href="#intro">Intro</a></li>
 				    <li><a href="#speakers">Speakers</a></li>
 				    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#faq">Faq</a></li>
 				    <li><a href="#venue">Venue</a></li>
 				    <li><a href="#join">Join us</a></li>
 			    </ul>
@@ -35,15 +41,15 @@
 
 	    <a id="intro"></a>
 	    <section class="title">
+            <img class="yooxlabs" src="img/logoYooxLabs.png" alt="yooxlabs" title="yooxlabs" />
 		    <h1>
-			    <span class="yooxlabs">YOOXlabs</span>
 			    <span class="techevent">Technology Event</span>
 			    <span class="subtitle">Front-end Matters</span>
 		    </h1>
 		    <time datetime="2015-11-18">
-			    November 18th, 2015
+			    <span class="data">November 18th, 2015</span>
 		    </time>
-		    <figure>
+		    <figure class="imgMeet">
 			    <img src="img/previousEvent.jpg" alt="A picture of the previous YOOXlabs Technology Event">
 			    <figcaption>A picture of the previous YOOXlabs Technology Event</figcaption>
 		    </figure>
@@ -60,60 +66,48 @@
 	    </section>
 
 	    <a id="speakers"></a>
-	    <section>
+	    <section class="speak">
 		    <h1>Speakers</h1>
 		    <ul>
-			    <li>
-				    <div class="name">Michele</div>
-				    <div class="surname">Carrì</div>
-				    <img src="img/speakers/michele_carri.jpg" alt="Portrait of Michele Carrì"/>
-				    <p class="bio">
-					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat molestie porttitor. Nullam posuere tristique velit at aliquam. Etiam laoreet elementum finibus. Duis eleifend, dolor quis tempus rutrum, augue purus molestie erat, in varius leo libero vitae tortor.
-				    </p>
+			    <li class="md-trigger" data-modal="modal-1">
+				    <img src="img/speakers/bn/carri.png" srcset="img/speakers/bn/carri_1x.jpg 1x, img/speakers/bn/carri_2x.jpg 2x" alt="Portrait of Michele Carrì"/>
+				    <div><span class="name">Michele</span>
+				    <span class="surname">Carr&igrave;</span></div>
 			    </li>
-			    <li>
-				    <div class="name">Riccardo</div>
-				    <div class="surname">Masetti</div>
-				    <img src="img/speakers/riccardo_masetti.jpg" alt="Portrait of Riccardo Masetti"/>
-				    <p class="bio">
-					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat molestie porttitor. Nullam posuere tristique velit at aliquam. Etiam laoreet elementum finibus. Duis eleifend, dolor quis tempus rutrum, augue purus molestie erat, in varius leo libero vitae tortor.
-				    </p>
+			    <li class="md-trigger" data-modal="modal-2">
+                    <img src="img/speakers/bn/masetti_1x.jpg" srcset="img/speakers/bn/masetti_1x.jpg 1x, img/speakers/bn/masetti_2x.jpg 2x" alt="Portrait of Riccardo Masetti"/>
+				    <div><span class="name">Riccardo</span>
+				    <span class="surname">Masetti</span></div>
 			    </li>
-			    <li>
-				    <div class="name">Bruno</div>
-				    <div class="surname">Scopelliti</div>
-				    <img src="img/speakers/bruno_scopelliti.jpg" alt="Portrait of Bruno Scopelliti"/>
-				    <p class="bio">
-					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat molestie porttitor. Nullam posuere tristique velit at aliquam. Etiam laoreet elementum finibus. Duis eleifend, dolor quis tempus rutrum, augue purus molestie erat, in varius leo libero vitae tortor.
-				    </p>
+			    <li class="md-trigger" data-modal="modal-3">
+                    <img src="img/speakers/bn/scopelliti_1x.jpg" srcset="img/speakers/bn/scopelliti_1x.jpg 1x, img/speakers/bn/scopelliti_2x.jpg 2x" alt="Portrait of Bruno Scopelliti"/>
+				    <div><span class="name">Bruno</span>
+				    <span class="surname">Scopelliti</span></div>
+				    
 			    </li>
-			    <li>
-				    <div class="name">Daniele</div>
-				    <div class="surname">Balboni</div>
-				    <img src="img/speakers/daniele_balboni.jpg" alt="Portrait of Daniele Balboni"/>
-				    <p class="bio">
-					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat molestie porttitor. Nullam posuere tristique velit at aliquam. Etiam laoreet elementum finibus. Duis eleifend, dolor quis tempus rutrum, augue purus molestie erat, in varius leo libero vitae tortor.
-				    </p>
+			    <li class="md-trigger" data-modal="modal-4">
+                    <img src="img/speakers/bn/balboni_1x.jpg" srcset="img/speakers/bn/balboni_1x.jpg 1x, img/speakers/bn/balboni_2x.jpg 2x" alt="Portrait of Daniele Balboni"/>
+				    <div><span class="name">Daniele</span>
+				    <span class="surname">Balboni</span></div>
 			    </li>
-			    <li>
-				    <div class="name">Alfonso</div>
-				    <div class="surname">Di Tollo</div>
-				    <img src="img/speakers/alfonso_di_tollo.jpg" alt="Portrait of Alfonso Di Tollo"/>
-				    <p class="bio">
-					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat molestie porttitor. Nullam posuere tristique velit at aliquam. Etiam laoreet elementum finibus. Duis eleifend, dolor quis tempus rutrum, augue purus molestie erat, in varius leo libero vitae tortor.
-				    </p>
+			    <li class="md-trigger" data-modal="modal-5">
+                    <img src="img/speakers/bn/ditollo_1x.jpg" srcset="img/speakers/bn/ditollo_1x.jpg 1x, img/speakers/bn/ditollo_2x.jpg 2x" alt="Portrait of Alfonso Di Tollo"/>
+				    <div><span class="name">Alfonso</span>
+				    <span class="surname">Di Tollo</span></div>
+				    
 			    </li>
 		    </ul>
 	    </section>
 
 	    <a id="schedule"></a>
-	    <section>
+	    <section class="sched">
 		    <h1>Schedule</h1>
 		    <table>
 			    <thead>
 			        <tr>
 				        <th>Time</th>
 				        <th>What</th>
+                        <th>Who</th>
 			        </tr>
 			    </thead>
 			    <tbody>
@@ -122,96 +116,215 @@
 					    <time datetime="2015-11-18 19:00">19:00</time>
 				    </td>
 				    <td>Welcome drinks and networking</td>
+                    <td></td>
 			    </tr>
 			    <tr>
 				    <td>
 					    <time datetime="2015-11-18 19:00">19:30</time>
 				    </td>
-				    <td>Intro</td>
+				    <td>Intro talk - Welcome!</td>
+                    <td>Alex Alexander</td>
 			    </tr>
 			    <tr>
 				    <td>
 					    <time datetime="2015-11-18 19:00">19:40</time>
 				    </td>
-				    <td>Slot 03</td>
+				    <td>EmberJS</td>
+                    <td>Michele Carr&igrave;</td>
 			    </tr>
 			    <tr>
 				    <td>
-					    <time datetime="2015-11-18 19:00">19:40</time>
+					    <time datetime="2015-11-18 20:10">20:10</time>
 				    </td>
-				    <td>Slot 04</td>
+				    <td>AngularJS - beginner</td>
+                    <td>Riccardo Masetti</td>
 			    </tr>
 			    <tr>
 				    <td>
-					    <time datetime="2015-11-18 19:00">19:40</time>
+					    <time datetime="2015-11-18 20:40">20:40</time>
 				    </td>
-				    <td>Slot 05</td>
+				    <td>Buffet, drinks and networking</td>
+                    <td></td>
 			    </tr>
 			    <tr>
 				    <td>
-					    <time datetime="2015-11-18 19:00">19:40</time>
+					    <time datetime="2015-11-18 19:00">21:10</time>
 				    </td>
-				    <td>Slot 06</td>
+				    <td>Marvin-js: A web testing framework for Node</td>
+                    <td>Bruno Scopelliti</td>
 			    </tr>
 			    <tr>
 				    <td>
-					    <time datetime="2015-11-18 19:00">19:40</time>
+					    <time datetime="2015-11-18 19:00">21:30</time>
 				    </td>
-				    <td>Slot 07</td>
+				    <td>Sviluppare un theme atipico per WordPress</td>
+                    <td>Daniele Balboni</td>
 			    </tr>
 			    <tr>
 				    <td>
-					    <time datetime="2015-11-18 19:00">19:40</time>
+					    <time datetime="2015-11-18 19:00">21:55</time>
 				    </td>
-				    <td>Slot 08</td>
+				    <td>SVGZR plugin - simplify SVG usage</td>
+                    <td>Alfonso Di Tollo</td>
 			    </tr>
 			    <tr>
 				    <td>
-					    <time datetime="2015-11-18 19:00">19:40</time>
+					    <time datetime="2015-11-18 22:50">22:15</time>
 				    </td>
-				    <td>Slot 09</td>
-			    </tr>
-			    <tr>
-				    <td>
-					    <time datetime="2015-11-18 19:00">19:40</time>
-				    </td>
-				    <td>Slot 10</td>
+				    <td>End..</td>
+                    <td></td>
 			    </tr>
 			    </tbody>
 		    </table>
 	    </section>
+        <a id="faq"></a>
+        <section>
+            <h1>FAQ</h1>
+        
+        </section>
 
 	    <a id="venue"></a>
-	    <section>
-		    <h1>Venue</h1>
-		    <p>
-			    The event will take place in the beautiful YOOXlabs headquarters in Zola Predosa (BO), Via Nannetti 1
-		    </p>
-		    <div class="map">
-			    Google map here
-		    </div>
+	    <section class="map">
+            <div class="section">
+                <h1>Venue</h1>
+                <p>
+                    The event will take place in the beautiful <strong>YOOXlabs headquarters</strong> in Zola Predosa (BO), Via Nannetti 1
+                </p>
+            </div>
+            
+            <div id="yoox"></div>
+		    <!--<div class="map">
+			    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.943754682664!2d11.236231451129616!3d44.49581927899891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd6ef44a6a65b%3A0x5ce82e081c8a9a53!2sYoox+Group!5e0!3m2!1sit!2sit!4v1446134675152" width="1024" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+		    </div>-->
 	    </section>
 
 	    <a id="join"></a>
-	    <section>
+	    <section class="end">
 		    <h1>Join us</h1>
-		    <button class="join">JOIN US</button>
+		    <button class="joinUs">JOIN US</button>
 	    </section>
+       
+        <!--MODALI SPEAKERS-->
+        <div class="md-modal md-effect-10" id="modal-1">
+			<div class="md-content">
+                <button class="md-close"><span class="icon-times"></span></button>
+                 <div class="md-img">
+                    <img src="img/speakers/bn/carri.png" srcset="img/speakers/bn/carri_1x.jpg 1x, img/speakers/bn/carri_2x.jpg 2x" alt="Portrait of Michele Carrì"/>
+                </div>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<div class="md-social">
+                        <a class="icon-social-twitter-circular" href="#"></a>
+                        <a class="cod-at" href="#">&#64;</a>
+                        <a class="icon-social-linkedin-circular" href="#"></a>
+                       
+                    </div>
+					
+				</div>
+			</div>
+		</div>
+        
+        <div class="md-modal md-effect-10" id="modal-2">
+			<div class="md-content">
+				<button class="md-close"><span class="icon-times"></span></button>
+                <div class="md-img">
+                    <img src="img/speakers/bn/masetti_1x.jpg" srcset="img/speakers/bn/masetti_1x.jpg 1x, img/speakers/bn/masetti_2x.jpg 2x" alt="Portrait of Riccardo Masetti"/>
+                </div>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<div class="md-social">
+                        <a class="icon-social-twitter-circular" href="#"></a>
+                        <a class="cod-at" href="#">&#64;</a>
+                        <a class="icon-social-linkedin-circular" href="#"></a>
+                        
+                    </div>
+					
+				</div>
+			</div>
+		</div>
+        
+        <div class="md-modal md-effect-10" id="modal-3">
+			<div class="md-content">
+                <button class="md-close"><span class="icon-times"></span></button>
+                 <div class="md-img">
+                    <img src="img/speakers/bn/scopelliti_1x.jpg" srcset="img/speakers/bn/scopelliti_1x.jpg 1x, img/speakers/bn/scopelliti_2x.jpg 2x" alt="Portrait of Bruno Scopelliti"/>
+                </div>
+				<div>
+					<p>Husband &amp; Dad. Web Developer &amp; (occasional)Blogger. Soccer-lover &amp; Risiko Strategist.</p>
+					<div class="md-social">
+                        <a class="icon-social-twitter-circular" href="#"></a>
+                        <a class="cod-at" href="#">&#64;</a>
+                        <a class="icon-social-linkedin-circular" href="#"></a>
+                        
+                    </div>
+					
+				</div>
+			</div>
+		</div>
+        
+        <div class="md-modal md-effect-10" id="modal-4">
+			<div class="md-content">
+				<button class="md-close"><span class="icon-times"></span></button>
+                 <div class="md-img">
+                    <img src="img/speakers/bn/balboni_1x.jpg" srcset="img/speakers/bn/balboni_1x.jpg 1x, img/speakers/bn/balboni_2x.jpg 2x" alt="Portrait of Daniele Balboni"/>
+                </div>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<div class="md-social">
+                        <a class="icon-social-twitter-circular" href="#"></a>
+                        <a class="cod-at" href="#">&#64;</a>
+                        <a class="icon-social-linkedin-circular" href="#"></a>
+                        
+                    </div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="md-modal md-effect-10" id="modal-5">
+			<div class="md-content">
+				<button class="md-close"><span class="icon-times"></span></button>
+                 <div class="md-img">
+                    <img src="img/speakers/bn/ditollo_1x.jpg" srcset="img/speakers/bn/ditollo_1x.jpg 1x, img/speakers/bn/ditollo_2x.jpg 2x" alt="Portrait of Alfonso Di Tollo"/>
+                </div>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<div class="md-social">
+                        <a class="icon-social-twitter-circular" href="#"></a>
+                        <a class="cod-at" href="#">&#64;</a>
+                        <a class="icon-social-linkedin-circular" href="#"></a>
+                        
+                    </div>
+				</div>
+			</div>
+		</div>
+        
+        
+        <div class="md-overlay"></div>
 
-
-	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+	    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
+        <script src="js/vendor/jquery.nicescroll.min.js"></script>
+        <script src="js/vendor/classie.js"></script>
+        <script src="js/vendor/modalEffects.js"></script>
+        <script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/vendor/cssParser.js"></script>
+		<!--<script src="js/vendor/css-filters-polyfill.js"></script>-->
+        
+        
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+        <!--<script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        </script>-->
     </body>
 </html>

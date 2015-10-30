@@ -1,41 +1,77 @@
+@import "variables";
+
 @mixin clearfix() {
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 @mixin hidden() {
-	display: none !important;
-	visibility: hidden;
+    display: none !important;
+    visibility: hidden;
 }
 
 @mixin visuallyHidden($focusable: false) {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	@if (focusable) {
-		clip: auto;
-		height: auto;
-		margin: 0;
-		overflow: visible;
-		position: static;
-		width: auto;
-	}
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    @if (focusable) {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
 }
 
 @mixin invisible() {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 @mixin resetList() {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin breakpoint($point, $value: 0) {
+    @if $point==mobile {
+        @media (min-width: $break-small) {
+            @content;
+        }
+    }
+    @if $point==tablet {
+        @media (min-width: $break-medium) {
+            @content;
+        }
+    }
+     @if $point==desktop {
+        @media (min-width: $break-medium-wide) {
+            @content;
+        }
+    }
+}
+
+@mixin headerTransition(){
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+@mixin btnJoin(){
+    background: none;
+    border: 3px solid $color-master;
+    padding: 10px 40px;
+    color: $color-master;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
 }
