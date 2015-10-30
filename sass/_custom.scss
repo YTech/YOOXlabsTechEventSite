@@ -245,13 +245,14 @@ button.joinUs {
 	}
 }
 
-#yoox {
+#map {
 	position: relative;
-	padding-top: 30px;
-	padding-bottom: 400px;
-	height: 400;
+	height: 300px;
 	overflow: hidden;
 	width: 100%;
+	@include breakpoint(tablet) {
+		height: 400px;
+	}
 }
 
 .gm-style-iw * {
