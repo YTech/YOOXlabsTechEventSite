@@ -1538,16 +1538,29 @@ perspective effects (not including the modals and the overlay).
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 5, ../sass/_custom.scss */
+/* line 4, ../sass/_custom.scss */
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+
+/* line 9, ../sass/_custom.scss */
+strong,
+b {
+  font-weight: normal;
+  font-weight: 400;
+}
+
+/* line 15, ../sass/_custom.scss */
 .outdatedBrowser {
   display: none;
 }
-/* line 7, ../sass/_custom.scss */
+/* line 17, ../sass/_custom.scss */
 .no-flexbox .outdatedBrowser {
   display: block;
 }
 
-/* line 12, ../sass/_custom.scss */
+/* line 22, ../sass/_custom.scss */
 .siteHeader {
   background: #dd6004;
   position: fixed;
@@ -1556,22 +1569,22 @@ perspective effects (not including the modals and the overlay).
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 12, ../sass/_custom.scss */
+  /* line 22, ../sass/_custom.scss */
   .siteHeader {
     padding: 10px 0;
   }
 }
-/* line 21, ../sass/_custom.scss */
+/* line 31, ../sass/_custom.scss */
 .siteHeader nav {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 21, ../sass/_custom.scss */
+  /* line 31, ../sass/_custom.scss */
   .siteHeader nav {
     display: inline;
   }
 }
-/* line 27, ../sass/_custom.scss */
+/* line 37, ../sass/_custom.scss */
 .siteHeader ul {
   display: -webkit-flex;
   display: flex;
@@ -1586,7 +1599,7 @@ perspective effects (not including the modals and the overlay).
   margin-bottom: -4px;
 }
 @media (min-width: 768px) {
-  /* line 27, ../sass/_custom.scss */
+  /* line 37, ../sass/_custom.scss */
   .siteHeader ul {
     -webkit-flex-direction: row;
     flex-direction: row;
@@ -1594,34 +1607,34 @@ perspective effects (not including the modals and the overlay).
     margin-bottom: 0;
   }
 }
-/* line 39, ../sass/_custom.scss */
+/* line 49, ../sass/_custom.scss */
 .siteHeader ul li {
   margin: 0 1em;
   padding: 5px;
 }
 @media (min-width: 768px) {
-  /* line 39, ../sass/_custom.scss */
+  /* line 49, ../sass/_custom.scss */
   .siteHeader ul li {
     padding: 0;
   }
 }
-/* line 45, ../sass/_custom.scss */
+/* line 55, ../sass/_custom.scss */
 .siteHeader ul li.active {
   border-bottom: 1px solid #FFFFFF;
 }
-/* line 48, ../sass/_custom.scss */
+/* line 58, ../sass/_custom.scss */
 .siteHeader ul li > a {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 48, ../sass/_custom.scss */
+  /* line 58, ../sass/_custom.scss */
   .siteHeader ul li > a {
     color: #FFFFFF;
   }
 }
-/* line 58, ../sass/_custom.scss */
+/* line 68, ../sass/_custom.scss */
 .siteHeader .btn-responsive-menu {
   cursor: pointer;
   text-align: right;
@@ -1630,13 +1643,13 @@ perspective effects (not including the modals and the overlay).
   padding-right: 20px;
 }
 @media (min-width: 768px) {
-  /* line 58, ../sass/_custom.scss */
+  /* line 68, ../sass/_custom.scss */
   .siteHeader .btn-responsive-menu {
     display: none;
   }
 }
 
-/* line 71, ../sass/_custom.scss */
+/* line 81, ../sass/_custom.scss */
 .speak ul {
   display: -webkit-flex;
   display: flex;
@@ -1650,61 +1663,70 @@ perspective effects (not including the modals and the overlay).
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-/* line 78, ../sass/_custom.scss */
+/* line 88, ../sass/_custom.scss */
 .speak li {
   -webkit-flex-basis: 270px;
   flex-basis: 270px;
 }
 
-/* line 83, ../sass/_custom.scss */
+/* line 93, ../sass/_custom.scss */
 section {
   max-width: 1024px;
   padding: 1em;
   margin: 0 auto;
   padding-top: 60px;
 }
-/* line 88, ../sass/_custom.scss */
+/* line 98, ../sass/_custom.scss */
 section h1 {
   text-align: center;
   border-bottom: 1px solid #CCCCCC;
   margin-bottom: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+  font-weight: 400;
 }
-/* line 93, ../sass/_custom.scss */
+/* line 106, ../sass/_custom.scss */
 section.title {
   text-align: center;
 }
-/* line 95, ../sass/_custom.scss */
+/* line 108, ../sass/_custom.scss */
 section.title img.yooxlabs {
   width: 100px;
   height: auto;
   display: block;
   margin: 30px auto 40px auto;
 }
-/* line 101, ../sass/_custom.scss */
+/* line 114, ../sass/_custom.scss */
 section.title h1 {
   text-transform: uppercase;
   border: 0 none;
+  margin-bottom: 25px;
 }
-/* line 104, ../sass/_custom.scss */
+/* line 119, ../sass/_custom.scss */
 section.title h1 .techevent {
   display: block;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 26px;
+  line-height: 36px;
 }
-/* line 109, ../sass/_custom.scss */
+/* line 124, ../sass/_custom.scss */
 section.title h1 .subtitle {
   color: #dd6004;
+  font-size: 40px;
 }
-/* line 113, ../sass/_custom.scss */
+/* line 130, ../sass/_custom.scss */
+section.title .data {
+  font-size: 18px;
+}
+/* line 133, ../sass/_custom.scss */
 section.title .imgMeet {
   position: relative;
 }
-/* line 115, ../sass/_custom.scss */
+/* line 135, ../sass/_custom.scss */
 section.title .imgMeet img {
   width: 100%;
   height: auto;
 }
-/* line 119, ../sass/_custom.scss */
+/* line 139, ../sass/_custom.scss */
 section.title .imgMeet figcaption {
   bottom: 10px;
   position: absolute;
@@ -1714,74 +1736,77 @@ section.title .imgMeet figcaption {
   width: 100%;
   font-size: 12px;
 }
-/* line 131, ../sass/_custom.scss */
+/* line 151, ../sass/_custom.scss */
 section.speak img {
   border-radius: 50%;
   width: 170px;
   height: 170px;
   margin-bottom: 10px;
 }
-/* line 137, ../sass/_custom.scss */
+/* line 157, ../sass/_custom.scss */
 section.speak li {
   text-align: center;
   margin-bottom: 40px;
   cursor: pointer;
 }
-/* line 143, ../sass/_custom.scss */
+/* line 163, ../sass/_custom.scss */
 section.speak li:hover img {
   opacity: 0.8;
 }
-/* line 151, ../sass/_custom.scss */
+/* line 171, ../sass/_custom.scss */
 section.sched table {
   width: 100%;
   text-align: center;
 }
-/* line 155, ../sass/_custom.scss */
+/* line 175, ../sass/_custom.scss */
 section.sched table tbody tr {
   border-bottom: 1px solid #CCCCCC;
 }
-/* line 157, ../sass/_custom.scss */
+/* line 177, ../sass/_custom.scss */
 section.sched table tbody tr:nth-child(odd) {
   background-color: #F0F0F0;
 }
-/* line 160, ../sass/_custom.scss */
+/* line 180, ../sass/_custom.scss */
 section.sched table tbody tr td {
   padding: 10px 5px;
 }
-/* line 167, ../sass/_custom.scss */
+/* line 187, ../sass/_custom.scss */
 section.map {
   max-width: 100%;
 }
-/* line 169, ../sass/_custom.scss */
+/* line 189, ../sass/_custom.scss */
 section.map .section {
   max-width: 1024px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 175, ../sass/_custom.scss */
+/* line 195, ../sass/_custom.scss */
 section.end {
   text-align: center;
+  padding-bottom: 50px;
 }
 
-/* line 181, ../sass/_custom.scss */
+/* line 202, ../sass/_custom.scss */
 button.joinUs {
   background: none;
   border: 3px solid #dd6004;
   padding: 10px 40px;
   color: #dd6004;
   text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
   width: 100%;
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 181, ../sass/_custom.scss */
+  /* line 202, ../sass/_custom.scss */
   button.joinUs {
     width: auto;
     display: inline-block;
   }
 }
 
-/* line 191, ../sass/_custom.scss */
+/* line 212, ../sass/_custom.scss */
 #yoox {
   position: relative;
   padding-top: 30px;
@@ -1790,20 +1815,20 @@ button.joinUs {
   overflow: hidden;
 }
 
-/* line 199, ../sass/_custom.scss */
+/* line 220, ../sass/_custom.scss */
 .gm-style-iw * {
   display: block;
   width: 100%;
 }
 
-/* line 204, ../sass/_custom.scss */
+/* line 225, ../sass/_custom.scss */
 .gm-style-iw h4,
 .gm-style-iw p {
   margin: 0;
   padding: 0;
 }
 
-/* line 210, ../sass/_custom.scss */
+/* line 231, ../sass/_custom.scss */
 .gm-style-iw a {
   color: #4272db;
 }

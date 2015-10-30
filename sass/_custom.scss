@@ -1,6 +1,16 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+strong,
+b{
+  font-weight: normal;
+    font-weight: 400;
+}
 
 .outdatedBrowser {
     display: none;
@@ -89,6 +99,9 @@ section {
         text-align: center;
         border-bottom: 1px solid $grey;
         margin-bottom: 50px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: normal;
+        font-weight: 400;
     }
     &.title {
         text-align: center;
@@ -101,14 +114,21 @@ section {
         h1 {
             text-transform: uppercase;
             border: 0 none;
+            margin-bottom: 25px;
+            
             .techevent {
                 display: block;
-                font-size: 16px;
-                line-height: 16px;
+                font-size: 26px;
+                line-height: 36px;
             }
             .subtitle {
                 color: $color-master;
+                font-size: 40px;
             }
+            
+        }
+        .data{
+            font-size: 18px; 
         }
         .imgMeet {
             position: relative;
@@ -174,6 +194,7 @@ section {
     }
     &.end {
         text-align: center;
+        padding-bottom: 50px;
     }
 }
 
