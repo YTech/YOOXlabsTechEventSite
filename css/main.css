@@ -753,7 +753,7 @@ perspective effects (not including the modals and the overlay).
 }
 /* line 85, ../sass/_modal.scss */
 .md-content img {
-  width: 100px;
+  width: 150px;
 }
 /* line 89, ../sass/_modal.scss */
 .md-content .md-close {
@@ -781,6 +781,10 @@ perspective effects (not including the modals and the overlay).
   font-size: 28px;
   vertical-align: top;
   margin-top: -2px;
+}
+/* line 114, ../sass/_modal.scss */
+.md-content .md-img {
+  padding-bottom: 5px;
 }
 
 /* line 119, ../sass/_modal.scss */
@@ -1720,13 +1724,16 @@ section.title .data {
 /* line 133, ../sass/_custom.scss */
 section.title .imgMeet {
   position: relative;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
 }
-/* line 135, ../sass/_custom.scss */
+/* line 139, ../sass/_custom.scss */
 section.title .imgMeet img {
   width: 100%;
   height: auto;
 }
-/* line 139, ../sass/_custom.scss */
+/* line 143, ../sass/_custom.scss */
 section.title .imgMeet figcaption {
   bottom: 10px;
   position: absolute;
@@ -1736,57 +1743,56 @@ section.title .imgMeet figcaption {
   width: 100%;
   font-size: 12px;
 }
-/* line 151, ../sass/_custom.scss */
+/* line 155, ../sass/_custom.scss */
 section.speak img {
-  border-radius: 50%;
   width: 170px;
   height: 170px;
   margin-bottom: 10px;
 }
-/* line 157, ../sass/_custom.scss */
+/* line 160, ../sass/_custom.scss */
 section.speak li {
   text-align: center;
   margin-bottom: 40px;
   cursor: pointer;
 }
-/* line 163, ../sass/_custom.scss */
+/* line 166, ../sass/_custom.scss */
 section.speak li:hover img {
   opacity: 0.8;
 }
-/* line 171, ../sass/_custom.scss */
+/* line 174, ../sass/_custom.scss */
 section.sched table {
   width: 100%;
   text-align: center;
 }
-/* line 175, ../sass/_custom.scss */
+/* line 178, ../sass/_custom.scss */
 section.sched table tbody tr {
   border-bottom: 1px solid #CCCCCC;
 }
-/* line 177, ../sass/_custom.scss */
+/* line 180, ../sass/_custom.scss */
 section.sched table tbody tr:nth-child(odd) {
   background-color: #F0F0F0;
 }
-/* line 180, ../sass/_custom.scss */
+/* line 183, ../sass/_custom.scss */
 section.sched table tbody tr td {
   padding: 10px 5px;
 }
-/* line 187, ../sass/_custom.scss */
+/* line 190, ../sass/_custom.scss */
 section.map {
   max-width: 100%;
 }
-/* line 189, ../sass/_custom.scss */
+/* line 192, ../sass/_custom.scss */
 section.map .section {
   max-width: 1024px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 195, ../sass/_custom.scss */
+/* line 198, ../sass/_custom.scss */
 section.end {
   text-align: center;
   padding-bottom: 50px;
 }
 
-/* line 202, ../sass/_custom.scss */
+/* line 205, ../sass/_custom.scss */
 button.joinUs {
   background: none;
   border: 3px solid #dd6004;
@@ -1799,14 +1805,14 @@ button.joinUs {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 202, ../sass/_custom.scss */
+  /* line 205, ../sass/_custom.scss */
   button.joinUs {
     width: auto;
     display: inline-block;
   }
 }
 
-/* line 212, ../sass/_custom.scss */
+/* line 215, ../sass/_custom.scss */
 #yoox {
   position: relative;
   padding-top: 30px;
@@ -1816,20 +1822,20 @@ button.joinUs {
   width: 100%;
 }
 
-/* line 221, ../sass/_custom.scss */
+/* line 224, ../sass/_custom.scss */
 .gm-style-iw * {
   display: block;
   width: 100%;
 }
 
-/* line 226, ../sass/_custom.scss */
+/* line 229, ../sass/_custom.scss */
 .gm-style-iw h4,
 .gm-style-iw p {
   margin: 0;
   padding: 0;
 }
 
-/* line 232, ../sass/_custom.scss */
+/* line 235, ../sass/_custom.scss */
 .gm-style-iw a {
   color: #4272db;
 }
