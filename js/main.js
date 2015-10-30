@@ -54,7 +54,7 @@ google.maps.event.addDomListener(window, 'load', init);
                 style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
             },
             scaleControl: true,
-            scrollwheel: true,
+            scrollwheel: false,
             panControl: true,
             streetViewControl: true,
             draggable : true,
@@ -63,7 +63,7 @@ google.maps.event.addDomListener(window, 'load', init);
                 opened: true,
             },
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            styles: [{"featureType":"all","elementType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]}],
+            //styles: [{"featureType":"all","elementType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]}],
         }
         var mapElement = document.getElementById('yoox');
         var map = new google.maps.Map(mapElement, mapOptions);
