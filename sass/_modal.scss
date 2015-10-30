@@ -100,8 +100,15 @@ perspective effects (not including the modals and the overlay).
         padding-top: 10px;
         a {
             text-decoration: none;
-            font-size: 30px;
+            font-size: 38px;
             color: $black;
+            margin: 0 5px;
+            
+            &.cod-at{
+                font-size: 28px; 
+                vertical-align: top;
+                margin-top: -2px;
+            }
         }
     }
     .md-img{
