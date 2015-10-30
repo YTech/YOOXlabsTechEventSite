@@ -744,18 +744,16 @@ perspective effects (not including the modals and the overlay).
   justify-content: space-around;
   -webkit-align-items: center;
   align-items: center;
-  color: #000000;
   background: #FFFFFF;
   position: relative;
   border-radius: 3px;
   margin: 0 auto;
-  font-size: 0.8em;
 }
-/* line 85, ../sass/_modal.scss */
+/* line 84, ../sass/_modal.scss */
 .md-content img {
   width: 150px;
 }
-/* line 89, ../sass/_modal.scss */
+/* line 88, ../sass/_modal.scss */
 .md-content .md-close {
   background: none;
   border: none;
@@ -763,31 +761,31 @@ perspective effects (not including the modals and the overlay).
   right: 0;
   font-size: 20px;
 }
-/* line 97, ../sass/_modal.scss */
+/* line 96, ../sass/_modal.scss */
 .md-content .md-social {
   text-align: center;
   border-top: 1px solid #CCCCCC;
   padding-top: 10px;
 }
-/* line 101, ../sass/_modal.scss */
+/* line 100, ../sass/_modal.scss */
 .md-content .md-social a {
   text-decoration: none;
   font-size: 38px;
   color: #000000;
   margin: 0 5px;
 }
-/* line 107, ../sass/_modal.scss */
+/* line 106, ../sass/_modal.scss */
 .md-content .md-social a.cod-at {
   font-size: 28px;
   vertical-align: top;
   margin-top: -2px;
 }
-/* line 114, ../sass/_modal.scss */
+/* line 113, ../sass/_modal.scss */
 .md-content .md-img {
   padding-bottom: 5px;
 }
 
-/* line 119, ../sass/_modal.scss */
+/* line 118, ../sass/_modal.scss */
 .md-content h3 {
   margin: 0;
   padding: 0.4em;
@@ -799,31 +797,39 @@ perspective effects (not including the modals and the overlay).
   border-radius: 3px 3px 0 0;
 }
 
-/* line 130, ../sass/_modal.scss */
+/* line 129, ../sass/_modal.scss */
 .md-content > div {
   padding: 15px 40px 30px;
   margin: 0;
 }
 
-/* line 135, ../sass/_modal.scss */
+/* line 134, ../sass/_modal.scss */
 .md-content > div p {
   margin: 0;
-  padding: 20px 0;
+  padding: 20px;
   border-top: 1px solid #CCCCCC;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+@media (min-width: 768px) {
+  /* line 134, ../sass/_modal.scss */
+  .md-content > div p {
+    padding: 20px 40px;
+  }
 }
 
-/* line 141, ../sass/_modal.scss */
+/* line 146, ../sass/_modal.scss */
 .md-content > div ul {
   margin: 0;
   padding: 0 0 30px 20px;
 }
 
-/* line 146, ../sass/_modal.scss */
+/* line 151, ../sass/_modal.scss */
 .md-content > div ul li {
   padding: 5px 0;
 }
 
-/* line 150, ../sass/_modal.scss */
+/* line 155, ../sass/_modal.scss */
 .md-content button {
   display: block;
   margin: 0 auto;
@@ -832,7 +838,7 @@ perspective effects (not including the modals and the overlay).
 
 /* Individual modal styles with animations/transitions */
 /* Effect 1: Fade in and scale up */
-/* line 159, ../sass/_modal.scss */
+/* line 164, ../sass/_modal.scss */
 .md-effect-1 .md-content {
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);
@@ -844,7 +850,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.3s;
 }
 
-/* line 170, ../sass/_modal.scss */
+/* line 175, ../sass/_modal.scss */
 .md-show.md-effect-1 .md-content {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -854,7 +860,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 2: Slide from the right */
-/* line 179, ../sass/_modal.scss */
+/* line 184, ../sass/_modal.scss */
 .md-effect-2 .md-content {
   -webkit-transform: translateX(20%);
   -moz-transform: translateX(20%);
@@ -866,7 +872,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
 
-/* line 190, ../sass/_modal.scss */
+/* line 195, ../sass/_modal.scss */
 .md-show.md-effect-2 .md-content {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -876,7 +882,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 3: Slide from the bottom */
-/* line 199, ../sass/_modal.scss */
+/* line 204, ../sass/_modal.scss */
 .md-effect-3 .md-content {
   -webkit-transform: translateY(20%);
   -moz-transform: translateY(20%);
@@ -888,7 +894,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.3s;
 }
 
-/* line 210, ../sass/_modal.scss */
+/* line 215, ../sass/_modal.scss */
 .md-show.md-effect-3 .md-content {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -898,7 +904,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 4: Newspaper */
-/* line 219, ../sass/_modal.scss */
+/* line 224, ../sass/_modal.scss */
 .md-effect-4 .md-content {
   -webkit-transform: scale(0) rotate(720deg);
   -moz-transform: scale(0) rotate(720deg);
@@ -907,7 +913,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 227, ../sass/_modal.scss */
+/* line 232, ../sass/_modal.scss */
 .md-show.md-effect-4 ~ .md-overlay,
 .md-effect-4 .md-content {
   -webkit-transition: all 0.5s;
@@ -915,7 +921,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.5s;
 }
 
-/* line 234, ../sass/_modal.scss */
+/* line 239, ../sass/_modal.scss */
 .md-show.md-effect-4 .md-content {
   -webkit-transform: scale(1) rotate(0deg);
   -moz-transform: scale(1) rotate(0deg);
@@ -925,14 +931,14 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 5: fall */
-/* line 243, ../sass/_modal.scss */
+/* line 248, ../sass/_modal.scss */
 .md-effect-5.md-modal {
   -webkit-perspective: 1300px;
   -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
-/* line 249, ../sass/_modal.scss */
+/* line 254, ../sass/_modal.scss */
 .md-effect-5 .md-content {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -944,7 +950,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 260, ../sass/_modal.scss */
+/* line 265, ../sass/_modal.scss */
 .md-show.md-effect-5 .md-content {
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -957,14 +963,14 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 6: side fall */
-/* line 272, ../sass/_modal.scss */
+/* line 277, ../sass/_modal.scss */
 .md-effect-6.md-modal {
   -webkit-perspective: 1300px;
   -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
-/* line 278, ../sass/_modal.scss */
+/* line 283, ../sass/_modal.scss */
 .md-effect-6 .md-content {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -976,7 +982,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 289, ../sass/_modal.scss */
+/* line 294, ../sass/_modal.scss */
 .md-show.md-effect-6 .md-content {
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -989,7 +995,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 7:  slide and stick to top */
-/* line 301, ../sass/_modal.scss */
+/* line 306, ../sass/_modal.scss */
 .md-effect-7 {
   top: 0;
   -webkit-transform: translateX(-50%);
@@ -998,7 +1004,7 @@ perspective effects (not including the modals and the overlay).
   transform: translateX(-50%);
 }
 
-/* line 309, ../sass/_modal.scss */
+/* line 314, ../sass/_modal.scss */
 .md-effect-7 .md-content {
   -webkit-transform: translateY(-200%);
   -moz-transform: translateY(-200%);
@@ -1010,7 +1016,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 320, ../sass/_modal.scss */
+/* line 325, ../sass/_modal.scss */
 .md-show.md-effect-7 .md-content {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
@@ -1021,14 +1027,14 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 8: 3D flip horizontal */
-/* line 330, ../sass/_modal.scss */
+/* line 335, ../sass/_modal.scss */
 .md-effect-8.md-modal {
   -webkit-perspective: 1300px;
   -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
-/* line 336, ../sass/_modal.scss */
+/* line 341, ../sass/_modal.scss */
 .md-effect-8 .md-content {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -1043,7 +1049,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 350, ../sass/_modal.scss */
+/* line 355, ../sass/_modal.scss */
 .md-show.md-effect-8 .md-content {
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
@@ -1053,14 +1059,14 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 9: 3D flip vertical */
-/* line 359, ../sass/_modal.scss */
+/* line 364, ../sass/_modal.scss */
 .md-effect-9.md-modal {
   -webkit-perspective: 1300px;
   -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
-/* line 365, ../sass/_modal.scss */
+/* line 370, ../sass/_modal.scss */
 .md-effect-9 .md-content {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -1075,7 +1081,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 379, ../sass/_modal.scss */
+/* line 384, ../sass/_modal.scss */
 .md-show.md-effect-9 .md-content {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
@@ -1085,14 +1091,14 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 10: 3D sign */
-/* line 388, ../sass/_modal.scss */
+/* line 393, ../sass/_modal.scss */
 .md-effect-10.md-modal {
   -webkit-perspective: 1300px;
   -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
-/* line 394, ../sass/_modal.scss */
+/* line 399, ../sass/_modal.scss */
 .md-effect-10 .md-content {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -1110,7 +1116,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.3s;
 }
 
-/* line 411, ../sass/_modal.scss */
+/* line 416, ../sass/_modal.scss */
 .md-show.md-effect-10 .md-content {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
@@ -1120,7 +1126,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 11: Super scaled */
-/* line 420, ../sass/_modal.scss */
+/* line 425, ../sass/_modal.scss */
 .md-effect-11 .md-content {
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
@@ -1132,7 +1138,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.3s;
 }
 
-/* line 431, ../sass/_modal.scss */
+/* line 436, ../sass/_modal.scss */
 .md-show.md-effect-11 .md-content {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -1142,7 +1148,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 12:  Just me */
-/* line 440, ../sass/_modal.scss */
+/* line 445, ../sass/_modal.scss */
 .md-effect-12 .md-content {
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
@@ -1154,18 +1160,18 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.3s;
 }
 
-/* line 451, ../sass/_modal.scss */
+/* line 456, ../sass/_modal.scss */
 .md-show.md-effect-12 ~ .md-overlay {
   background: #e74c3c;
 }
 
-/* line 455, ../sass/_modal.scss */
+/* line 460, ../sass/_modal.scss */
 .md-effect-12 .md-content h3,
 .md-effect-12 .md-content {
   background: transparent;
 }
 
-/* line 460, ../sass/_modal.scss */
+/* line 465, ../sass/_modal.scss */
 .md-show.md-effect-12 .md-content {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -1175,14 +1181,14 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 13: 3D slit */
-/* line 469, ../sass/_modal.scss */
+/* line 474, ../sass/_modal.scss */
 .md-effect-13.md-modal {
   -webkit-perspective: 1300px;
   -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
-/* line 475, ../sass/_modal.scss */
+/* line 480, ../sass/_modal.scss */
 .md-effect-13 .md-content {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -1194,7 +1200,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 486, ../sass/_modal.scss */
+/* line 491, ../sass/_modal.scss */
 .md-show.md-effect-13 .md-content {
   -webkit-animation: slit .7s forwards ease-out;
   -moz-animation: slit .7s forwards ease-out;
@@ -1235,14 +1241,14 @@ perspective effects (not including the modals and the overlay).
   }
 }
 /* Effect 14:  3D Rotate from bottom */
-/* line 508, ../sass/_modal.scss */
+/* line 513, ../sass/_modal.scss */
 .md-effect-14.md-modal {
   -webkit-perspective: 1300px;
   -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
-/* line 514, ../sass/_modal.scss */
+/* line 519, ../sass/_modal.scss */
 .md-effect-14 .md-content {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -1260,7 +1266,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.3s ease-out;
 }
 
-/* line 531, ../sass/_modal.scss */
+/* line 536, ../sass/_modal.scss */
 .md-show.md-effect-14 .md-content {
   -webkit-transform: translateY(0%) rotateX(0deg);
   -moz-transform: translateY(0%) rotateX(0deg);
@@ -1270,14 +1276,14 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 15:  3D Rotate in from left */
-/* line 540, ../sass/_modal.scss */
+/* line 545, ../sass/_modal.scss */
 .md-effect-15.md-modal {
   -webkit-perspective: 1300px;
   -moz-perspective: 1300px;
   perspective: 1300px;
 }
 
-/* line 546, ../sass/_modal.scss */
+/* line 551, ../sass/_modal.scss */
 .md-effect-15 .md-content {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -1295,7 +1301,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.3s;
 }
 
-/* line 563, ../sass/_modal.scss */
+/* line 568, ../sass/_modal.scss */
 .md-show.md-effect-15 .md-content {
   -webkit-transform: translateZ(0px) translateX(0%) rotateY(0deg);
   -moz-transform: translateZ(0px) translateX(0%) rotateY(0deg);
@@ -1305,19 +1311,19 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 16:  Blur */
-/* line 572, ../sass/_modal.scss */
+/* line 577, ../sass/_modal.scss */
 .md-show.md-effect-16 ~ .md-overlay {
   background: rgba(180, 46, 32, 0.5);
 }
 
-/* line 576, ../sass/_modal.scss */
+/* line 581, ../sass/_modal.scss */
 .md-show.md-effect-16 ~ .container {
   -webkit-filter: blur(3px);
   -moz-filter: blur(3px);
   filter: blur(3px);
 }
 
-/* line 582, ../sass/_modal.scss */
+/* line 587, ../sass/_modal.scss */
 .md-effect-16 .md-content {
   -webkit-transform: translateY(-5%);
   -moz-transform: translateY(-5%);
@@ -1326,7 +1332,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 590, ../sass/_modal.scss */
+/* line 595, ../sass/_modal.scss */
 .md-show.md-effect-16 ~ .container,
 .md-effect-16 .md-content {
   -webkit-transition: all 0.3s;
@@ -1334,7 +1340,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.3s;
 }
 
-/* line 597, ../sass/_modal.scss */
+/* line 602, ../sass/_modal.scss */
 .md-show.md-effect-16 .md-content {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -1344,7 +1350,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 17:  Slide in from bottom with perspective on container */
-/* line 606, ../sass/_modal.scss */
+/* line 611, ../sass/_modal.scss */
 .md-show.md-effect-17 ~ .container {
   height: 100%;
   overflow: hidden;
@@ -1353,7 +1359,7 @@ perspective effects (not including the modals and the overlay).
   transition: transform 0.3s;
 }
 
-/* line 614, ../sass/_modal.scss */
+/* line 619, ../sass/_modal.scss */
 .md-show.md-effect-17 ~ .container,
 .md-show.md-effect-17 ~ .md-overlay {
   -webkit-transform: rotateX(-2deg);
@@ -1368,7 +1374,7 @@ perspective effects (not including the modals and the overlay).
   transform-style: preserve-3d;
 }
 
-/* line 628, ../sass/_modal.scss */
+/* line 633, ../sass/_modal.scss */
 .md-effect-17 .md-content {
   opacity: 0;
   -webkit-transform: translateY(200%);
@@ -1377,7 +1383,7 @@ perspective effects (not including the modals and the overlay).
   transform: translateY(200%);
 }
 
-/* line 636, ../sass/_modal.scss */
+/* line 641, ../sass/_modal.scss */
 .md-show.md-effect-17 .md-content {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -1390,13 +1396,13 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 18:  Slide from right with perspective on container */
-/* line 648, ../sass/_modal.scss */
+/* line 653, ../sass/_modal.scss */
 .md-show.md-effect-18 ~ .container {
   height: 100%;
   overflow: hidden;
 }
 
-/* line 653, ../sass/_modal.scss */
+/* line 658, ../sass/_modal.scss */
 .md-show.md-effect-18 ~ .md-overlay {
   background: rgba(143, 27, 15, 0.8);
   -webkit-transition: all 0.5s;
@@ -1404,7 +1410,7 @@ perspective effects (not including the modals and the overlay).
   transition: all 0.5s;
 }
 
-/* line 660, ../sass/_modal.scss */
+/* line 665, ../sass/_modal.scss */
 .md-show.md-effect-18 ~ .container,
 .md-show.md-effect-18 ~ .md-overlay {
   -webkit-transform-style: preserve-3d;
@@ -1445,7 +1451,7 @@ perspective effects (not including the modals and the overlay).
     transform: translateZ(-200px);
   }
 }
-/* line 688, ../sass/_modal.scss */
+/* line 693, ../sass/_modal.scss */
 .md-effect-18 .md-content {
   -webkit-transform: translateX(200%);
   -moz-transform: translateX(200%);
@@ -1454,7 +1460,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 696, ../sass/_modal.scss */
+/* line 701, ../sass/_modal.scss */
 .md-show.md-effect-18 .md-content {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -1467,20 +1473,20 @@ perspective effects (not including the modals and the overlay).
 }
 
 /* Effect 19:  Slip in from the top with perspective on container */
-/* line 708, ../sass/_modal.scss */
+/* line 713, ../sass/_modal.scss */
 .md-show.md-effect-19 ~ .container {
   height: 100%;
   overflow: hidden;
 }
 
-/* line 713, ../sass/_modal.scss */
+/* line 718, ../sass/_modal.scss */
 .md-show.md-effect-19 ~ .md-overlay {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-/* line 719, ../sass/_modal.scss */
+/* line 724, ../sass/_modal.scss */
 .md-show.md-effect-19 ~ .container,
 .md-show.md-effect-19 ~ .md-overlay {
   -webkit-transform-style: preserve-3d;
@@ -1512,7 +1518,7 @@ perspective effects (not including the modals and the overlay).
     animation-timing-function: ease-out;
   }
 }
-/* line 753, ../sass/_modal.scss */
+/* line 758, ../sass/_modal.scss */
 .md-effect-19 .md-content {
   -webkit-transform: translateY(-200%);
   -moz-transform: translateY(-200%);
@@ -1521,7 +1527,7 @@ perspective effects (not including the modals and the overlay).
   opacity: 0;
 }
 
-/* line 761, ../sass/_modal.scss */
+/* line 766, ../sass/_modal.scss */
 .md-show.md-effect-19 .md-content {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -1534,7 +1540,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 @media screen and (max-width: 32em) {
-  /* line 773, ../sass/_modal.scss */
+  /* line 778, ../sass/_modal.scss */
   body {
     font-size: 75%;
   }
@@ -1588,7 +1594,7 @@ b {
     display: inline;
   }
 }
-/* line 37, ../sass/_custom.scss */
+/* line 38, ../sass/_custom.scss */
 .siteHeader ul {
   display: -webkit-flex;
   display: flex;
@@ -1603,7 +1609,7 @@ b {
   margin-bottom: -4px;
 }
 @media (min-width: 768px) {
-  /* line 37, ../sass/_custom.scss */
+  /* line 38, ../sass/_custom.scss */
   .siteHeader ul {
     -webkit-flex-direction: row;
     flex-direction: row;
@@ -1611,34 +1617,34 @@ b {
     margin-bottom: 0;
   }
 }
-/* line 49, ../sass/_custom.scss */
+/* line 50, ../sass/_custom.scss */
 .siteHeader ul li {
   margin: 0 1em;
   padding: 5px;
 }
 @media (min-width: 768px) {
-  /* line 49, ../sass/_custom.scss */
+  /* line 50, ../sass/_custom.scss */
   .siteHeader ul li {
     padding: 0;
   }
 }
-/* line 55, ../sass/_custom.scss */
+/* line 56, ../sass/_custom.scss */
 .siteHeader ul li.active {
   border-bottom: 1px solid #FFFFFF;
 }
-/* line 58, ../sass/_custom.scss */
+/* line 59, ../sass/_custom.scss */
 .siteHeader ul li > a {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 58, ../sass/_custom.scss */
+  /* line 59, ../sass/_custom.scss */
   .siteHeader ul li > a {
     color: #FFFFFF;
   }
 }
-/* line 68, ../sass/_custom.scss */
+/* line 69, ../sass/_custom.scss */
 .siteHeader .btn-responsive-menu {
   cursor: pointer;
   text-align: right;
@@ -1647,13 +1653,13 @@ b {
   padding-right: 20px;
 }
 @media (min-width: 768px) {
-  /* line 68, ../sass/_custom.scss */
+  /* line 69, ../sass/_custom.scss */
   .siteHeader .btn-responsive-menu {
     display: none;
   }
 }
 
-/* line 81, ../sass/_custom.scss */
+/* line 82, ../sass/_custom.scss */
 .speak ul {
   display: -webkit-flex;
   display: flex;
@@ -1667,20 +1673,20 @@ b {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-/* line 88, ../sass/_custom.scss */
+/* line 89, ../sass/_custom.scss */
 .speak li {
   -webkit-flex-basis: 270px;
   flex-basis: 270px;
 }
 
-/* line 93, ../sass/_custom.scss */
+/* line 94, ../sass/_custom.scss */
 section {
   max-width: 1024px;
   padding: 1em;
   margin: 0 auto;
   padding-top: 60px;
 }
-/* line 98, ../sass/_custom.scss */
+/* line 99, ../sass/_custom.scss */
 section h1 {
   text-align: center;
   border-bottom: 1px solid #CCCCCC;
@@ -1689,51 +1695,51 @@ section h1 {
   font-weight: normal;
   font-weight: 400;
 }
-/* line 106, ../sass/_custom.scss */
+/* line 107, ../sass/_custom.scss */
 section.title {
   text-align: center;
 }
-/* line 108, ../sass/_custom.scss */
+/* line 109, ../sass/_custom.scss */
 section.title img.yooxlabs {
   width: 100px;
   height: auto;
   display: block;
   margin: 30px auto 40px auto;
 }
-/* line 114, ../sass/_custom.scss */
+/* line 115, ../sass/_custom.scss */
 section.title h1 {
   text-transform: uppercase;
   border: 0 none;
   margin-bottom: 25px;
 }
-/* line 119, ../sass/_custom.scss */
+/* line 120, ../sass/_custom.scss */
 section.title h1 .techevent {
   display: block;
   font-size: 26px;
   line-height: 36px;
 }
-/* line 124, ../sass/_custom.scss */
+/* line 125, ../sass/_custom.scss */
 section.title h1 .subtitle {
   color: #dd6004;
   font-size: 40px;
 }
-/* line 130, ../sass/_custom.scss */
+/* line 131, ../sass/_custom.scss */
 section.title .data {
   font-size: 18px;
 }
-/* line 133, ../sass/_custom.scss */
+/* line 134, ../sass/_custom.scss */
 section.title .imgMeet {
   position: relative;
   padding: 0;
   margin: 0;
   margin-top: 15px;
 }
-/* line 139, ../sass/_custom.scss */
+/* line 140, ../sass/_custom.scss */
 section.title .imgMeet img {
   width: 100%;
   height: auto;
 }
-/* line 143, ../sass/_custom.scss */
+/* line 144, ../sass/_custom.scss */
 section.title .imgMeet figcaption {
   bottom: 10px;
   position: absolute;
@@ -1743,56 +1749,56 @@ section.title .imgMeet figcaption {
   width: 100%;
   font-size: 12px;
 }
-/* line 155, ../sass/_custom.scss */
+/* line 156, ../sass/_custom.scss */
 section.speak img {
   width: 170px;
   height: 170px;
   margin-bottom: 10px;
 }
-/* line 160, ../sass/_custom.scss */
+/* line 161, ../sass/_custom.scss */
 section.speak li {
   text-align: center;
   margin-bottom: 40px;
   cursor: pointer;
 }
-/* line 166, ../sass/_custom.scss */
+/* line 167, ../sass/_custom.scss */
 section.speak li:hover img {
   opacity: 0.8;
 }
-/* line 174, ../sass/_custom.scss */
+/* line 175, ../sass/_custom.scss */
 section.sched table {
   width: 100%;
   text-align: center;
 }
-/* line 178, ../sass/_custom.scss */
+/* line 179, ../sass/_custom.scss */
 section.sched table tbody tr {
   border-bottom: 1px solid #CCCCCC;
 }
-/* line 180, ../sass/_custom.scss */
+/* line 181, ../sass/_custom.scss */
 section.sched table tbody tr:nth-child(odd) {
   background-color: #F0F0F0;
 }
-/* line 183, ../sass/_custom.scss */
+/* line 184, ../sass/_custom.scss */
 section.sched table tbody tr td {
   padding: 10px 5px;
 }
-/* line 190, ../sass/_custom.scss */
+/* line 191, ../sass/_custom.scss */
 section.map {
   max-width: 100%;
 }
-/* line 192, ../sass/_custom.scss */
+/* line 193, ../sass/_custom.scss */
 section.map .section {
   max-width: 1024px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 198, ../sass/_custom.scss */
+/* line 199, ../sass/_custom.scss */
 section.end {
   text-align: center;
   padding-bottom: 50px;
 }
 
-/* line 205, ../sass/_custom.scss */
+/* line 206, ../sass/_custom.scss */
 button.joinUs {
   background: none;
   border: 3px solid #dd6004;
@@ -1805,14 +1811,14 @@ button.joinUs {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 205, ../sass/_custom.scss */
+  /* line 206, ../sass/_custom.scss */
   button.joinUs {
     width: auto;
     display: inline-block;
   }
 }
 
-/* line 215, ../sass/_custom.scss */
+/* line 216, ../sass/_custom.scss */
 #yoox {
   position: relative;
   padding-top: 30px;
@@ -1822,20 +1828,20 @@ button.joinUs {
   width: 100%;
 }
 
-/* line 224, ../sass/_custom.scss */
+/* line 225, ../sass/_custom.scss */
 .gm-style-iw * {
   display: block;
   width: 100%;
 }
 
-/* line 229, ../sass/_custom.scss */
+/* line 230, ../sass/_custom.scss */
 .gm-style-iw h4,
 .gm-style-iw p {
   margin: 0;
   padding: 0;
 }
 
-/* line 235, ../sass/_custom.scss */
+/* line 236, ../sass/_custom.scss */
 .gm-style-iw a {
   color: #4272db;
 }

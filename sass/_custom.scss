@@ -30,6 +30,7 @@ b{
     }
     nav {
         display: none;
+        
         @include breakpoint(tablet) {
             display: inline;
         }

@@ -75,12 +75,11 @@ perspective effects (not including the modals and the overlay).
     @include resetList();
     @include justify-content(space-around);
     @include align-items(center);
-	color: $black;
 	background: $white;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
-    font-size: 0.8em;
+    
     
     img {
         width: 150px;  
@@ -134,8 +133,14 @@ perspective effects (not including the modals and the overlay).
 
 .md-content > div p {
 	margin: 0;
-	padding: 20px 0;
+	padding: 20px;
     border-top: 1px solid $grey;
+    font-size: 1em;
+    line-height: 1.5em;
+    
+    @include breakpoint(tablet){
+        padding: 20px 40px;
+    }
 }
 
 .md-content > div ul {
