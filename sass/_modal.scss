@@ -93,6 +93,20 @@ perspective effects (not including the modals and the overlay).
         right: 0;
         font-size: 20px;
     }
+    
+    .md-social{
+        text-align: center;
+        border-top: 1px solid $grey;
+        padding-top: 10px;
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            color: $black;
+        }
+    }
+    .md-img{
+         
+    }
 }
 
 .md-content h3 {
@@ -113,7 +127,8 @@ perspective effects (not including the modals and the overlay).
 
 .md-content > div p {
 	margin: 0;
-	padding: 10px 0;
+	padding: 20px 0;
+    border-top: 1px solid $grey;
 }
 
 .md-content > div ul {
