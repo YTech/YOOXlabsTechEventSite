@@ -16,6 +16,24 @@ b{
     display: none;
     .no-flexbox & {
         display: block;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        top: 30px;
+        z-index: 4;
+        font-size: 1.3em;
+        
+        p{
+            border-top: 2px solid $color-master;  
+            border-bottom: 2px solid $color-master;  
+            background: $light-grey;
+            padding: 0.5em 0;
+            
+            a{
+                color: $color-master;
+            }
+        }
     }
 }
 
