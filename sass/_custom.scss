@@ -88,10 +88,14 @@ b {
 		cursor: pointer;
 		text-align: right;
 		color: $white;
-		font-size: 20px;
-		padding-right: 20px;
+		padding: 0 7px;
 		@include breakpoint(tablet) {
 			display: none;
+		}
+		svg {
+			fill: white;
+			height: 40px;
+			width: 40px;
 		}
 	}
 }
@@ -105,7 +109,7 @@ b {
 		@include justify-content(center);
 	}
 	li {
-		@include flex-basis(270px);
+		@include flex-basis(250px);
 	}
 }
 
@@ -116,10 +120,8 @@ section {
 	padding-top: 60px;
 	h1 {
 		text-align: center;
-		border-bottom: 1px solid $grey;
 		margin-bottom: 50px;
 		font-family: 'Nunito', sans-serif;
-		font-weight: normal;
 		font-weight: 400;
 	}
 	&.title {
@@ -160,13 +162,14 @@ section {
 				height: auto;
 			}
 			figcaption {
-				bottom: 10px;
+				@include visuallyHidden();
+				/*bottom: 10px;
 				position: absolute;
 				color: white;
 				text-shadow: 0 0 5px black;
 				text-align: center;
 				width: 100%;
-				font-size: 12px;
+				font-size: 12px;*/
 			}
 		}
 	}
@@ -192,7 +195,10 @@ section {
 	&.schedule {
 		table {
 			width: 100%;
-			text-align: center;
+			text-align: left;
+			thead {
+				@include visuallyHidden();
+			}
 			tbody {
 				tr {
 					border-bottom: 1px solid $grey;

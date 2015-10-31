@@ -79,37 +79,45 @@ perspective effects (not including the modals and the overlay).
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
+	padding: 20px 40px 30px 40px;
     
     
     img {
-        width: 150px;  
+        //width: 150px;
     }
     
     .md-close{
-        background: none;
-        border: none;
+        background: transparent;
+        border: 0;
         position: absolute;
-        right: 0;
-        font-size: 20px;
+        top: 0;
+	    right: 0;
+	    height: 40px;
+	    width: 40px;
+	    padding: 5px;
+	    svg {
+		    width: 20px;
+		    height: 20px;
+	    }
     }
     
     .md-social{
-        text-align: center;
-        border-top: 1px solid $grey;
+        @include resetList();
+	    @include display-flex();
+	    @include justify-content(center);
+
         padding-top: 10px;
+
+	    svg {
+		    width: 30px;
+		    height: 30px;
+		    fill: black;
+	    }
         a {
-            text-decoration: none;
-            font-size: 38px;
-            color: $black;
             margin: 0 5px;
-            
-            &.cod-at{
-                font-size: 28px; 
-                vertical-align: top;
-                margin-top: -2px;
-            }
         }
     }
+
     .md-img{
          padding-bottom: 5px;
     }
@@ -126,15 +134,9 @@ perspective effects (not including the modals and the overlay).
 	border-radius: 3px 3px 0 0;
 }
 
-.md-content > div {
-	padding: 15px 40px 30px;
-	margin: 0;
-}
-
 .md-content > div p {
 	margin: 0;
 	padding: 20px;
-    border-top: 1px solid $grey;
     font-size: 1em;
     line-height: 1.5em;
     

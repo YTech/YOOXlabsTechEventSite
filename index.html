@@ -7,22 +7,42 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
-        <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
         <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="icons/style.css">
         <link rel="stylesheet" href="css/main.css">
         <script>
         /*! modernizr 3.1.0 (Custom Build) | MIT *
          * http://modernizr.com/download/?-flexbox !*/
         !function(e,n,t){function r(e){var n=C.className,t=Modernizr._config.classPrefix||"";if(w&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),w?C.className.baseVal=n:C.className=n)}function o(e,n){return typeof e===n}function s(){var e,n,t,r,s,i,a;for(var l in x)if(x.hasOwnProperty(l)){if(e=[],n=x[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function i(e,n){return!!~(""+e).indexOf(n)}function a(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):w?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function l(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function f(e,n){return function(){return e.apply(n,arguments)}}function u(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?f(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function p(){var e=n.body;return e||(e=a(w?"svg":"body"),e.fake=!0),e}function c(e,t,r,o){var s,i,l,f,u="modernizr",d=a("div"),c=p();if(parseInt(r,10))for(;r--;)l=a("div"),l.id=o?o[r]:u+(r+1),d.appendChild(l);return s=a("style"),s.type="text/css",s.id="s"+u,(c.fake?c:d).appendChild(s),c.appendChild(d),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),d.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",f=C.style.overflow,C.style.overflow="hidden",C.appendChild(c)),i=t(d,e),c.fake?(c.parentNode.removeChild(c),C.style.overflow=f,C.offsetHeight):d.parentNode.removeChild(d),!!i}function m(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(d(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];o--;)s.push("("+d(n[o])+":"+r+")");return s=s.join(" or "),c("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function f(){d&&(delete z.style,delete z.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var u=m(e,r);if(!o(u,"undefined"))return u}for(var d,p,c,h,v,y=["modernizr","tspan"];!z.style;)d=!0,z.modElem=a(y.shift()),z.style=z.modElem.style;for(c=e.length,p=0;c>p;p++)if(h=e[p],v=z.style[h],i(h,"-")&&(h=l(h)),z.style[h]!==t){if(s||o(r,"undefined"))return f(),"pfx"==n?h:!0;try{z.style[h]=r}catch(g){}if(z.style[h]!=v)return f(),"pfx"==n?h:!0}return f(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+b.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),u(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var g=[],C=n.documentElement,w="svg"===C.nodeName.toLowerCase(),x=[],_={_version:"3.1.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){x.push({name:e,fn:n,options:t})},addAsyncTest:function(e){x.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=_,Modernizr=new Modernizr;var S="Moz O ms Webkit",b=_._config.usePrefixes?S.split(" "):[];_._cssomPrefixes=b;var E=_._config.usePrefixes?S.toLowerCase().split(" "):[];_._domPrefixes=E;var P={elem:a("modernizr")};Modernizr._q.push(function(){delete P.elem});var z={style:P.elem.style};Modernizr._q.unshift(function(){delete z.style}),_.testAllProps=v,_.testAllProps=y,Modernizr.addTest("flexbox",y("flexBasis","1px",!0)),s(),r(g),delete _.addTest,delete _.addAsyncTest;for(var N=0;N<Modernizr._q.length;N++)Modernizr._q[N]();e.Modernizr=Modernizr}(window,document);
         </script>
-
-
+	    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <defs>
+			    <symbol id="icon-menu" viewBox="0 0 1024 1024">
+				    <title>menu</title>
+				    <path class="path1" d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"></path>
+			    </symbol>
+			    <symbol id="icon-cross" viewBox="0 0 1024 1024">
+				    <title>cross</title>
+				    <path class="path1" d="M1014.662 822.66c-0.004-0.004-0.008-0.008-0.012-0.010l-310.644-310.65 310.644-310.65c0.004-0.004 0.008-0.006 0.012-0.010 3.344-3.346 5.762-7.254 7.312-11.416 4.246-11.376 1.824-24.682-7.324-33.83l-146.746-146.746c-9.148-9.146-22.45-11.566-33.828-7.32-4.16 1.55-8.070 3.968-11.418 7.31 0 0.004-0.004 0.006-0.008 0.010l-310.648 310.652-310.648-310.65c-0.004-0.004-0.006-0.006-0.010-0.010-3.346-3.342-7.254-5.76-11.414-7.31-11.38-4.248-24.682-1.826-33.83 7.32l-146.748 146.748c-9.148 9.148-11.568 22.452-7.322 33.828 1.552 4.16 3.97 8.072 7.312 11.416 0.004 0.002 0.006 0.006 0.010 0.010l310.65 310.648-310.65 310.652c-0.002 0.004-0.006 0.006-0.008 0.010-3.342 3.346-5.76 7.254-7.314 11.414-4.248 11.376-1.826 24.682 7.322 33.83l146.748 146.746c9.15 9.148 22.452 11.568 33.83 7.322 4.16-1.552 8.070-3.97 11.416-7.312 0.002-0.004 0.006-0.006 0.010-0.010l310.648-310.65 310.648 310.65c0.004 0.002 0.008 0.006 0.012 0.008 3.348 3.344 7.254 5.762 11.414 7.314 11.378 4.246 24.684 1.826 33.828-7.322l146.746-146.748c9.148-9.148 11.57-22.454 7.324-33.83-1.552-4.16-3.97-8.068-7.314-11.414z"></path>
+			    </symbol>
+			    <symbol id="icon-twitter3" viewBox="0 0 1024 1024">
+				    <title>twitter3</title>
+				    <path class="path1" d="M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM766.478 381.48c0.252 5.632 0.38 11.296 0.38 16.988 0 173.51-132.070 373.588-373.584 373.588-74.15 0-143.168-21.738-201.276-58.996 10.272 1.218 20.724 1.84 31.322 1.84 61.518 0 118.134-20.992 163.072-56.21-57.458-1.054-105.948-39.020-122.658-91.184 8.018 1.532 16.244 2.36 24.704 2.36 11.976 0 23.578-1.61 34.592-4.61-60.064-12.066-105.326-65.132-105.326-128.75 0-0.554 0-1.104 0.012-1.652 17.7 9.834 37.948 15.742 59.47 16.424-35.232-23.546-58.414-63.736-58.414-109.292 0-24.064 6.476-46.62 17.78-66.010 64.76 79.44 161.51 131.712 270.634 137.19-2.238-9.612-3.4-19.632-3.4-29.924 0-72.512 58.792-131.298 131.304-131.298 37.766 0 71.892 15.944 95.842 41.462 29.908-5.886 58.008-16.814 83.38-31.862-9.804 30.662-30.624 56.394-57.732 72.644 26.56-3.174 51.866-10.232 75.412-20.674-17.594 26.328-39.854 49.454-65.514 67.966z"></path>
+			    </symbol>
+			    <symbol id="icon-linkedin" viewBox="0 0 1024 1024">
+				    <title>linkedin</title>
+				    <path class="path1" d="M852 0h-680c-94.6 0-172 77.4-172 172v680c0 94.6 77.4 172 172 172h680c94.6 0 172-77.4 172-172v-680c0-94.6-77.4-172-172-172zM384 832h-128v-448h128v448zM320 320c-35.346 0-64-28.654-64-64s28.654-64 64-64 64 28.654 64 64-28.654 64-64 64zM832 832h-128v-256c0-35.346-28.654-64-64-64s-64 28.654-64 64v256h-128v-448h128v79.472c26.398-36.264 66.752-79.472 112-79.472 79.53 0 144 71.634 144 160v288z"></path>
+			    </symbol>
+		    </defs>
+	    </svg>
     </head>
     <body>
 
 	    <header class="siteHeader">
-            <div class="btn-responsive-menu"><span class="icon-th-menu"></span></div>
+            <div class="btn-responsive-menu">
+	            <svg>
+		            <use xlink:href="#icon-menu"></use>
+	            </svg>
+            </div>
 		    <nav>
 			    <ul>
 				    <li><a href="#intro">Intro</a></li>
@@ -35,6 +55,8 @@
 		    </nav>
 	    </header>
 
+
+
 	    <aside class="outdatedBrowser">
 		    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	    </aside>
@@ -46,20 +68,16 @@
 			    <span class="techevent">Technology Event</span>
 			    <span class="subtitle">Front-end Matters</span>
 		    </h1>
-		    <time datetime="2015-11-18">
-			    <span class="data">November 18th, 2015</span>
+		    <time datetime="2015-11-18" class="data">
+			    Wednesday, November 18th, 2015
 		    </time>
 		    <figure class="imgMeet">
 			    <img src="img/previousEvent.jpg" alt="A picture of the previous YOOXlabs Technology Event" width="1000" height="533">
 			    <figcaption>A picture of the previous YOOXlabs Technology Event</figcaption>
 		    </figure>
-		    <p>Know-how, passione per la tecnologia e desiderio di innovare passano attraverso il nostro YOOXlabs.
-			    La piattaforma tecnologica di YOOX Net-a-Porter Group, pensata appositamente per la moda online,
-			    è stata il catalizzatore per l’accelarazione all’innovazione consentendo la fusione tra eCommerce
-			    e lusso.</p>
-		    <p>YOOXlabs è il cuore pulsante della nostra innovazione, un costante miglioramento a 360°, parte
-			    essenziale del DNA di YOOX Net-a-Porter group da 15 anni. Ed è per questo che YOOXlabs assume la
-			    leadership nello studio delle opportunità che il front-end può portare: design, user experience, performance</p>
+		    <p>Know-how, passion for technology and appetite for innovation permeate YOOXlabs and live in its developers. Technological platform for the YOOX Net-a-Porter Group, specifically designed for online fashion, YOOXlabs has been the catalyst for acceleration and innovation, making the fusion between eCommerce and luxury real.</p>
+		    <p>YOOXlabs is now the heart of our innovation, leader in the engineering of a constant improvement in user experience and website performance through the application of best practices and latest web technologies. That's why we're opening the doors again for our second technological show, which will feature some of the latest technologies and tools available in front-end development.</p>
+		    <p>The event will feature 1 talk from our guest Michele Carrì, <strong>an introduction to the Ember.js framework</strong>, plus 4 talks from YOOXlabs developers about <strong>Angular.js</strong>, <strong>developing an atypical theme for WordPress</strong>, a tool to <strong>improve your workflow with SVG</strong> and another to <strong>automate the testing process of your website or web application</strong>.</p>
 		    <div class="cta">
 			    <button class="joinUs">Join us</button>
 		    </div>
@@ -157,7 +175,7 @@
 				    <td>
 					    <time datetime="2015-11-18 19:00">21:30</time>
 				    </td>
-				    <td>Sviluppare un theme atipico per WordPress</td>
+				    <td>Develop an atypical theme for WordPress</td>
                     <td>Daniele Balboni</td>
 			    </tr>
 			    <tr>
@@ -181,7 +199,10 @@
         <a id="faq"></a>
         <section>
             <h1>FAQ</h1>
-
+	        <dl>
+		        <dt>Which language will the talks in?</dt>
+		        <dd>Due to the expected audience, all the talks are going to be in Italian.</dd>
+	        </dl>
         </section>
 
 	    <a id="venue"></a>
@@ -203,103 +224,167 @@
 		    <button class="joinUs">JOIN US</button>
 	    </section>
 
-        <!-- Speakers modal windows -->
-        <div class="md-modal md-effect-10" id="modal-1">
-			<div class="md-content">
-                <button class="md-close"><span class="icon-times"></span></button>
-                 <div class="md-img">
-                    <img src="img/speakers/bn/carri.png" srcset="img/speakers/bn/carri_1x.jpg 1x, img/speakers/bn/carri_2x.jpg 2x" alt="Portrait of Michele Carrì"/>
-                </div>
-				<div>
-					<p>This is a modal window. You can do the following things with it:</p>
-					<div class="md-social">
-                        <a class="icon-social-twitter-circular" href="#"></a>
-                        <a class="cod-at" href="#">&#64;</a>
-                        <a class="icon-social-linkedin-circular" href="#"></a>
+	    <!-- Speakers modal windows -->
+	    <article class="md-modal md-effect-10" id="modal-1">
+		    <div class="md-content">
+			    <h1>Michele Carrì</h1>
+			    <div class="md-img">
+				    <img src="img/speakers/bn/carri.png"
+				         srcset="img/speakers/bn/carri_1x.jpg 1x, img/speakers/bn/carri_2x.jpg 2x"
+				         alt="Portrait of Michele Carrì"/>
+			    </div>
+			    <div>
+				    <p>This is a modal window. You can do the following things with it:</p>
+				    <ul class="md-social">
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-twitter3"></use>
+						    </svg>
+					    </a></li>
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-linkedin"></use>
+						    </svg>
+					    </a></li>
+				    </ul>
+			    </div>
+			    <button class="md-close">
+				    <svg>
+					    <use xlink:href="#icon-cross"></use>
+				    </svg>
+			    </button>
+		    </div>
+	    </article>
 
-                    </div>
+	    <article class="md-modal md-effect-10" id="modal-2">
+		    <div class="md-content">
+			    <h1>Riccardo Masetti</h1>
+			    <div class="md-img">
+				    <img src="img/speakers/bn/masetti_1x.jpg"
+				         srcset="img/speakers/bn/masetti_1x.jpg 1x, img/speakers/bn/masetti_2x.jpg 2x"
+				         alt="Portrait of Riccardo Masetti"/>
+			    </div>
+			    <div>
+				    <p>This is a modal window. You can do the following things with it:</p>
+				    <ul class="md-social">
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-twitter3"></use>
+						    </svg>
+					    </a></li>
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-linkedin"></use>
+						    </svg>
+					    </a></li>
+				    </ul>
+			    </div>
+			    <button class="md-close">
+				    <svg>
+					    <use xlink:href="#icon-cross"></use>
+				    </svg>
+			    </button>
+		    </div>
+	    </article>
 
-				</div>
-			</div>
-		</div>
+	    <article class="md-modal md-effect-10" id="modal-3">
+		    <div class="md-content">
+			    <h1>Bruno Scopelliti</h1>
+			    <div class="md-img">
+				    <img src="img/speakers/bn/scopelliti_1x.jpg"
+				         srcset="img/speakers/bn/scopelliti_1x.jpg 1x, img/speakers/bn/scopelliti_2x.jpg 2x"
+				         alt="Portrait of Bruno Scopelliti"/>
+			    </div>
+			    <div>
+				    <p>Husband &amp; Dad. Web Developer &amp; (occasional)Blogger. Soccer-lover &amp; Risiko
+					    Strategist.</p>
+				    <ul class="md-social">
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-twitter3"></use>
+						    </svg>
+					    </a></li>
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-linkedin"></use>
+						    </svg>
+					    </a></li>
+				    </ul>
+			    </div>
+			    <button class="md-close">
+				    <svg>
+					    <use xlink:href="#icon-cross"></use>
+				    </svg>
+			    </button>
+		    </div>
+	    </article>
 
-        <div class="md-modal md-effect-10" id="modal-2">
-			<div class="md-content">
-				<button class="md-close"><span class="icon-times"></span></button>
-                <div class="md-img">
-                    <img src="img/speakers/bn/masetti_1x.jpg" srcset="img/speakers/bn/masetti_1x.jpg 1x, img/speakers/bn/masetti_2x.jpg 2x" alt="Portrait of Riccardo Masetti"/>
-                </div>
-				<div>
-					<p>This is a modal window. You can do the following things with it:</p>
-					<div class="md-social">
-                        <a class="icon-social-twitter-circular" href="#"></a>
-                        <a class="cod-at" href="#">&#64;</a>
-                        <a class="icon-social-linkedin-circular" href="#"></a>
+	    <article class="md-modal md-effect-10" id="modal-4">
+		    <div class="md-content">
+			    <h1>Daniele Balboni</h1>
+			    <div class="md-img">
+				    <img src="img/speakers/bn/balboni_1x.jpg"
+				         srcset="img/speakers/bn/balboni_1x.jpg 1x, img/speakers/bn/balboni_2x.jpg 2x"
+				         alt="Portrait of Daniele Balboni"/>
+			    </div>
+			    <div>
+				    <p>This is a modal window. You can do the following things with it:</p>
+				    <ul class="md-social">
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-twitter3"></use>
+						    </svg>
+					    </a></li>
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-linkedin"></use>
+						    </svg>
+					    </a></li>
+				    </ul>
+			    </div>
+			    <button class="md-close">
+				    <svg>
+					    <use xlink:href="#icon-cross"></use>
+				    </svg>
+			    </button>
+		    </div>
+	    </article>
 
-                    </div>
+	    <article class="md-modal md-effect-10" id="modal-5">
+		    <div class="md-content">
+			    <h1>Alfonso Di Tollo</h1>
+			    <div class="md-img">
+				    <img src="img/speakers/bn/ditollo_1x.jpg"
+				         srcset="img/speakers/bn/ditollo_1x.jpg 1x, img/speakers/bn/ditollo_2x.jpg 2x"
+				         alt="Portrait of Alfonso Di Tollo"/>
+			    </div>
+			    <div>
+				    <p>This is a modal window. You can do the following things with it:</p>
+				    <ul class="md-social">
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-twitter3"></use>
+						    </svg>
+					    </a></li>
+					    <li><a href="#">
+						    <svg>
+							    <use xlink:href="#icon-linkedin"></use>
+						    </svg>
+					    </a></li>
+				    </ul>
+			    </div>
+			    <button class="md-close">
+				    <svg>
+					    <use xlink:href="#icon-cross"></use>
+				    </svg>
+			    </button>
+		    </div>
+	    </article>
 
-				</div>
-			</div>
-		</div>
-
-        <div class="md-modal md-effect-10" id="modal-3">
-			<div class="md-content">
-                <button class="md-close"><span class="icon-times"></span></button>
-                 <div class="md-img">
-                    <img src="img/speakers/bn/scopelliti_1x.jpg" srcset="img/speakers/bn/scopelliti_1x.jpg 1x, img/speakers/bn/scopelliti_2x.jpg 2x" alt="Portrait of Bruno Scopelliti"/>
-                </div>
-				<div>
-					<p>Husband &amp; Dad. Web Developer &amp; (occasional)Blogger. Soccer-lover &amp; Risiko Strategist.</p>
-					<div class="md-social">
-                        <a class="icon-social-twitter-circular" href="#"></a>
-                        <a class="cod-at" href="#">&#64;</a>
-                        <a class="icon-social-linkedin-circular" href="#"></a>
-
-                    </div>
-
-				</div>
-			</div>
-		</div>
-
-        <div class="md-modal md-effect-10" id="modal-4">
-			<div class="md-content">
-				<button class="md-close"><span class="icon-times"></span></button>
-                 <div class="md-img">
-                    <img src="img/speakers/bn/balboni_1x.jpg" srcset="img/speakers/bn/balboni_1x.jpg 1x, img/speakers/bn/balboni_2x.jpg 2x" alt="Portrait of Daniele Balboni"/>
-                </div>
-				<div>
-					<p>This is a modal window. You can do the following things with it:</p>
-					<div class="md-social">
-                        <a class="icon-social-twitter-circular" href="#"></a>
-                        <a class="cod-at" href="#">&#64;</a>
-                        <a class="icon-social-linkedin-circular" href="#"></a>
-
-                    </div>
-				</div>
-			</div>
-		</div>
-
-        <div class="md-modal md-effect-10" id="modal-5">
-			<div class="md-content">
-				<button class="md-close"><span class="icon-times"></span></button>
-                 <div class="md-img">
-                    <img src="img/speakers/bn/ditollo_1x.jpg" srcset="img/speakers/bn/ditollo_1x.jpg 1x, img/speakers/bn/ditollo_2x.jpg 2x" alt="Portrait of Alfonso Di Tollo"/>
-                </div>
-				<div>
-					<p>This is a modal window. You can do the following things with it:</p>
-					<div class="md-social">
-                        <a class="icon-social-twitter-circular" href="#"></a>
-                        <a class="cod-at" href="#">&#64;</a>
-                        <a class="icon-social-linkedin-circular" href="#"></a>
-
-                    </div>
-				</div>
-			</div>
-		</div>
-
-        <div class="md-overlay"></div>
+	    <div class="md-overlay"></div>
 
         <script src="js/vendor/jquery-2.1.4.min.js"></script>
+	    <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
 	    <script src="js/main.min.js"></script>
 
 	    <script>
