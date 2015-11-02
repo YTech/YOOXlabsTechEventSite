@@ -56,9 +56,8 @@ b {
 	}
 	nav {
 		display: none;
-
 		@include breakpoint(tablet) {
-			display: inline;
+			display: block;
 		}
 	}
 	ul {
@@ -67,29 +66,36 @@ b {
 		@include flex-direction(column);
 		@include resetList();
 		background: $white;
-		margin-bottom: -4px;
+		//margin-bottom: -4px;
 		@include breakpoint(tablet) {
 			@include flex-direction(row);
 			background: none;
 			margin-bottom: 0;
 		}
 		li {
-			margin: 0 1em;
-			padding: 5px;
+			background-color: lighten($color-master, 49%);
+			&:nth-child(even) {
+				background-color: lighten($color-master, 51%);
+			}
 			@include breakpoint(tablet) {
 				padding: 0;
-			}
-			&.active {
-				border-bottom: 1px solid $white;
-			}
-			> a {
-				color: $black;
-				text-decoration: none;
-				text-transform: uppercase;
-                display: block;
-				@include breakpoint(tablet) {
-					color: $white;
+				background-color: transparent;
+				&:nth-child(even) {
+					background-color: transparent;
 				}
+				&.active {
+					background-color: rgba(255,255,255,0.1);
+				}
+			}
+		}
+		a {
+			padding: 5px 10px;
+			color: $black;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: block;
+			@include breakpoint(tablet) {
+				color: $white;
 			}
 		}
 	}
@@ -118,7 +124,7 @@ b {
 		@include justify-content(center);
 	}
 	li {
-		@include flex-basis(257px);
+		@include flex-basis(204px);
 	}
 }
 
@@ -149,8 +155,7 @@ section {
 			.techevent {
 				display: block;
 				font-size: 26px;
-				line-height: 36px;
-                margin-bottom: 30px;
+				margin-bottom: .3em;
 			}
 			.subtitle {
 				color: $color-master;
@@ -170,16 +175,19 @@ section {
 			img {
 				width: 100%;
 				height: auto;
+				&.lazy {
+					display: none;
+					&.visible {
+						display: block;
+					}
+				}
 			}
 			figcaption {
-				@include visuallyHidden();
-				/*bottom: 10px;
-				position: absolute;
-				color: white;
-				text-shadow: 0 0 5px black;
-				text-align: center;
-				width: 100%;
-				font-size: 12px;*/
+				position: relative;
+				z-index: 100;
+				color: $color-master;
+				margin: .5em auto;
+				font-size: 12px;
 			}
 		}
 	}
