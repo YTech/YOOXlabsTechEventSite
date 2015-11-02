@@ -38,14 +38,10 @@
         }
     });
 
-
-   
-        $('.slideshow').cycle({
-            fx:     'uncover', 
-            delay:  -2000 
-        });
-  
-
+    $('.slideshow').cycle({
+        fx:     'uncover',
+        delay:  -2000
+    });
 
 }());
 
