@@ -4,6 +4,11 @@
 
 body {
 	font-family: 'Nunito', sans-serif;
+    font-size: 1.1em;
+    @include breakpoint(tablet) {
+		font-size: 1em;
+	}
+    
 	.fonts-loaded & {
 		font-weight: 300;
 	}
@@ -81,6 +86,7 @@ b {
 				color: $black;
 				text-decoration: none;
 				text-transform: uppercase;
+                display: block;
 				@include breakpoint(tablet) {
 					color: $white;
 				}
