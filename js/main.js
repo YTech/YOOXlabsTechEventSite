@@ -41,7 +41,7 @@
 
    
         $('.slideshow').cycle({
-            fx:     'uncover', 
+            fx:     'fade', 
             delay:  -2000 
         });
   
@@ -79,7 +79,7 @@
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         new google.maps.Marker({
-            icon: 'https://mapbuildr.com/assets/img/markers/default.png',
+            icon: './img/marker.png',
             position: new google.maps.LatLng(44.495823272909256, 11.238436236770667),
             map: map,
             title: "Yoox Net-a-Porter Group Headquarters"
