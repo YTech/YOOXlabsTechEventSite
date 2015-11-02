@@ -41,7 +41,8 @@
 
    
         $('.slideshow').cycle({
-            fx: 'turnUp'
+            fx:     'uncover', 
+            delay:  -2000 
         });
   
 
