@@ -4,11 +4,11 @@
 
 body {
 	font-family: 'Nunito', sans-serif;
-    font-size: 1.1em;
-    @include breakpoint(tablet) {
+	font-size: 1.1em;
+	@include breakpoint(tablet) {
 		font-size: 1em;
 	}
-    
+
 	.fonts-loaded & {
 		font-weight: 300;
 	}
@@ -86,7 +86,7 @@ b {
 				color: $black;
 				text-decoration: none;
 				text-transform: uppercase;
-                display: block;
+				display: block;
 				@include breakpoint(tablet) {
 					color: $white;
 				}
@@ -144,13 +144,13 @@ section {
 			text-transform: uppercase;
 			border: 0 none;
 			margin-bottom: 25px;
-            line-height: 1em;
+			line-height: 1em;
 
 			.techevent {
 				display: block;
 				font-size: 26px;
 				line-height: 36px;
-                margin-bottom: 30px;
+				margin-bottom: 30px;
 			}
 			.subtitle {
 				color: $color-master;
@@ -222,18 +222,17 @@ section {
 			}
 		}
 	}
-    &.faqs {
-        dt{
-            
-            color: $color-master;
-            font-size: 1.1em;
-        }
-        dd{
-          padding-bottom: 10px;
-          border-bottom: 1px solid $grey;
-            margin-bottom: 10px;
-        }
-    }
+	&.faqs {
+		dt {
+			color: $color-master;
+			font-size: 1.1em;
+		}
+		dd {
+			padding-bottom: 10px;
+			border-bottom: 1px solid $grey;
+			margin-bottom: 10px;
+		}
+	}
 	&.map {
 		max-width: 100%;
 		.section {
@@ -242,35 +241,21 @@ section {
 			text-align: center;
 		}
 
-		.map {
-			position: relative;
-			padding-bottom: 400px;
-			overflow: hidden;
-			width: 100%;
+		a {
+			margin: .5em 0;
+			text-decoration: none;
+			color: $color-master;
+			text-align: center;
+			display: block;
 		}
-
-		.map iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-        
-        a {
-          text-decoration: none;
-            color: $color-master;
-            text-align: right;
-            display: block;
-        }
 	}
 	&.end {
 		text-align: center;
 		padding-bottom: 50px;
-        
-        h1 {
-            @include visuallyHidden();   
-        }
+
+		h1 {
+			@include visuallyHidden();
+		}
 	}
 }
 
@@ -310,36 +295,36 @@ button.joinUs {
 }
 
 footer {
-   position: relative;
-    clear: both;
-    background: $black;
-    padding: 20px 0;
-    z-index: 100; 
-    color: $white;
-    text-align: center;
-    font-size: 0.8em;
-    
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        
-        li {
-           display: inline-block;
-            
-            a {
-                fill: $white;  
-                
-                svg {
-                    width: 40px;
-                    height: 40px;
-                    padding: 0 10px;
-                }
-            }
-        }
-        
-    }
-    p {
-        margin-bottom: 0;   
-    }
+	position: relative;
+	clear: both;
+	background: $black;
+	padding: 20px 0;
+	z-index: 100;
+	color: $white;
+	text-align: center;
+	font-size: 0.8em;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: inline-block;
+
+			a {
+				fill: $white;
+
+				svg {
+					width: 40px;
+					height: 40px;
+					padding: 0 10px;
+				}
+			}
+		}
+
+	}
+	p {
+		margin-bottom: 0;
+	}
 }
