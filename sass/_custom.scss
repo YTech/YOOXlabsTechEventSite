@@ -246,6 +246,10 @@ section {
 	&.end {
 		text-align: center;
 		padding-bottom: 50px;
+        
+        h1 {
+            @include visuallyHidden();   
+        }
 	}
 }
 
@@ -282,4 +286,39 @@ button.joinUs {
 
 .gm-style-iw a {
 	color: #4272db;
+}
+
+footer {
+   position: relative;
+    clear: both;
+    background: $black;
+    padding: 20px 0;
+    z-index: 100; 
+    color: $white;
+    text-align: center;
+    font-size: 0.8em;
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+           display: inline-block;
+            
+            a {
+                fill: $white;  
+                
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    padding: 0 10px;
+                }
+            }
+        }
+        
+    }
+    p {
+        margin-bottom: 0;   
+    }
 }
