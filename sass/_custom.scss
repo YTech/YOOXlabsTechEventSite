@@ -222,6 +222,18 @@ section {
 			}
 		}
 	}
+    &.faqs {
+        dt{
+            
+            color: $color-master;
+            font-size: 1.1em;
+        }
+        dd{
+          padding-bottom: 10px;
+          border-bottom: 1px solid $grey;
+            margin-bottom: 10px;
+        }
+    }
 	&.map {
 		max-width: 100%;
 		.section {

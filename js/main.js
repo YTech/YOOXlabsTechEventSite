@@ -37,7 +37,7 @@
             $nav.slideDown().addClass('open');
         }
     });
-
+    
 
 }());
 
@@ -118,9 +118,5 @@
             removeModalHandler();
         });
     });
-
-
-
-
 
 })();
