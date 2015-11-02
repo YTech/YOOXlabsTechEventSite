@@ -37,7 +37,14 @@
             $nav.slideDown().addClass('open');
         }
     });
-    
+
+
+   
+        $('.slideshow').cycle({
+            fx: 'turnUp'
+        });
+  
+
 
 }());
 

@@ -48,7 +48,7 @@ b {
 .siteHeader {
 	background: $color-master;
 	position: fixed;
-	z-index: 1;
+	z-index: 6;
 	padding: 5px 0;
 	width: 100%;
 	@include breakpoint(tablet) {
