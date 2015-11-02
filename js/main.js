@@ -39,7 +39,7 @@
     });
 
     $('.slideshow').cycle({
-        fx:     'uncover',
+        fx:     'fade',
         delay:  -2000
     });
 
