@@ -122,12 +122,13 @@
 (function(){
     // Lazily load other slideShow images
     var $slideShow = $('.slideshow');
-    $slideShow.find('[data-src]').each(function() {
-        var $img = $(this);
-        $img.attr('src', $img.data('src'));
-    });
     $slideShow.cycle({
         fx: 'fade',
         delay: -2000
+    });
+    $slideShow.find('.lazy').each(function() {
+        var $img = $(this);
+        $img.attr('src', $img.data('src'));
+        $img.addClass('loaded');
     });
 }());
