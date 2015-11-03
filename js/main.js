@@ -123,8 +123,7 @@
     // Lazily load other slideShow images
     var $slideShow = $('.slideshow');
     $slideShow.cycle({
-        fx: 'fade',
-        delay: -2000
+        fx: 'fade'
     });
     $slideShow.find('.lazy').each(function() {
         var $img = $(this);
