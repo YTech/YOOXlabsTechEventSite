@@ -139,24 +139,19 @@ perspective effects (not including the modals and the overlay).
 	border-radius: 3px 3px 0 0;
 }
 
-.md-content > div p {
-	margin: 0;
-	padding: 20px 10px;
-    font-size: 0.9em;
-    line-height: 1.5em;
-    
-    @include breakpoint(tablet){
-        padding: 20px 40px;
-    }
-}
-
-.md-content > div ul {
-	margin: 0;
-	padding: 0 0 30px 20px;
-}
-
-.md-content > div ul li {
-	padding: 5px 0;
+.md-content > div {
+	p {
+		margin: 20px 10px;
+		font-size: 0.9em;
+		line-height: 1.5em;
+	}
+	ul {
+		margin: 0;
+		padding: 0 0 30px 20px;
+	}
+	li {
+		padding: 5px 0;
+	}
 }
 
 .md-content button {
