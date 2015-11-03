@@ -69,7 +69,7 @@
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         new google.maps.Marker({
-            icon: './img/marker.png',
+            icon: './img_optim/marker.png',
             position: new google.maps.LatLng(44.495823272909256, 11.238436236770667),
             map: map,
             title: "Yoox Net-a-Porter Group Headquarters"
