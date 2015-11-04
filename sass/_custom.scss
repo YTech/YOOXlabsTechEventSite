@@ -271,6 +271,7 @@ button.joinUs {
 	@include btnJoin();
 	width: 100%;
 	display: block;
+    cursor: pointer;
 	@include breakpoint(tablet) {
 		width: auto;
 		display: inline-block;
