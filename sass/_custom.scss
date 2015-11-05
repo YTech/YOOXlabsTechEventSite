@@ -8,7 +8,7 @@ body {
     @include breakpoint(tablet) {
 		font-size: 1em;
 	}
-    
+
 	.fonts-loaded & {
 		font-weight: 300;
 	}
@@ -137,9 +137,6 @@ section {
 		margin: 60px 0 30px;
 		font-weight: 400;
 	}
-	.cta {
-		margin: 30px 0;
-	}
 	&.title {
 		padding-top: 60px;
 		text-align: center;
@@ -148,6 +145,9 @@ section {
 			height: 46px;
 			display: block;
 			margin: 30px auto 40px auto;
+		}
+		.cta {
+			margin: 30px 0;
 		}
 		h1 {
 			text-transform: uppercase;
@@ -234,7 +234,7 @@ section {
 	}
     &.faqs {
         dt{
-            
+
             color: $color-master;
             font-size: 1.1em;
         }
@@ -251,32 +251,51 @@ section {
 			margin: 0 auto;
 			text-align: center;
 		}
-        
-        a {
-          text-decoration: none;
-            color: $color-master;
-            text-align: right;
-            display: block;
-        }
 	}
 	&.end {
 		text-align: center;
-		//padding-bottom: 50px;
-        
+		margin: 60px auto;
+
         h1 {
-            @include visuallyHidden();   
+            @include visuallyHidden();
         }
 	}
 }
 
-button.joinUs {
-	@include btnJoin();
+%thickButton {
+	background: white;
+	border-color: $color-master;
+	border-style: solid;
+	color: $color-master;
+	text-transform: uppercase;
+}
+
+.joinUs {
+	@extend %thickButton;
+	padding: 10px 40px;
+	font-weight: 400;
+	font-size: 24px;
 	width: 100%;
 	display: block;
     cursor: pointer;
+	border-width: 3px;
 	@include breakpoint(tablet) {
 		width: auto;
 		display: inline-block;
+	}
+}
+
+.toGMaps {
+	text-align: center;
+	margin-top: 15px;
+	a {
+		@extend %thickButton;
+		padding: 5px 20px;
+		font-size: 16px;
+		text-decoration: none;
+		color: $color-master;
+		display: inline-block;
+		border-width: 2px;
 	}
 }
 
@@ -310,32 +329,30 @@ footer {
     clear: both;
     background: $black;
     padding: 20px 0;
-    z-index: 100; 
+    z-index: 100;
     color: $white;
     text-align: center;
     font-size: 0.8em;
-    
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
-        
-        li {
-           display: inline-block;
-            
-            a {
-                fill: $white;  
-                
-                svg {
-                    width: 40px;
-                    height: 40px;
-                    padding: 0 10px;
-                }
-            }
-        }
-        
     }
+	li {
+		display: inline-block;
+	}
+	a {
+		fill: $white;
+		&:hover {
+			fill: lighten($color-master, 30%);
+		}
+		svg {
+			width: 40px;
+			height: 40px;
+			padding: 0 10px;
+		}
+	}
     p {
-        margin-bottom: 0;   
+        margin-bottom: 0;
     }
 }
