@@ -130,26 +130,29 @@ b {
 
 section {
 	max-width: 1024px;
-	padding: 1em;
+	padding: 0 1em;
 	margin: 0 auto;
-	padding-top: 60px;
 	h1 {
 		text-align: center;
-		margin-bottom: 50px;
+		margin: 60px 0 30px;
 		font-weight: 400;
 	}
+	.cta {
+		margin: 30px 0;
+	}
 	&.title {
+		padding-top: 60px;
 		text-align: center;
 		.yooxlabs {
 			width: 140px;
-			height: auto;
+			height: 46px;
 			display: block;
 			margin: 30px auto 40px auto;
 		}
 		h1 {
 			text-transform: uppercase;
 			border: 0 none;
-			margin-bottom: 25px;
+			margin: 30px 0;
             line-height: 1em;
 
 			.techevent {
@@ -169,8 +172,7 @@ section {
 		.imgMeet {
 			position: relative;
 			padding: 0;
-			margin: 0;
-			margin-top: 15px;
+			margin: 50px 0 30px;
 
 			img {
 				width: 100%;
@@ -259,7 +261,7 @@ section {
 	}
 	&.end {
 		text-align: center;
-		padding-bottom: 50px;
+		//padding-bottom: 50px;
         
         h1 {
             @include visuallyHidden();   
