@@ -216,32 +216,38 @@ section {
 		table {
 			width: 100%;
 			text-align: left;
-			thead {
-				@include visuallyHidden();
-			}
-			tbody {
-				tr {
-					border-bottom: 1px solid $grey;
-					&:nth-child(odd) {
-						background-color: $light-grey;
-					}
-					td {
-						padding: 10px 5px;
-					}
+		}
+		thead {
+			@include visuallyHidden();
+		}
+		tbody {
+			tr {
+				border-bottom: 1px solid $grey;
+				&:nth-child(odd) {
+					background-color: $light-grey;
 				}
+			}
+			td {
+				padding: 10px 5px;
+				vertical-align: top;
+			}
+		}
+		.who {
+			display: none;
+			@include breakpoint(tablet) {
+				display: table-cell;
 			}
 		}
 	}
 	&.faqs {
 		dt {
-
 			color: $color-master;
 			font-size: 1.1em;
+			margin-bottom: 5px;
 		}
 		dd {
-			padding-bottom: 10px;
-			border-bottom: 1px solid $grey;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
+			margin-left: 0;
 		}
 	}
 	&.map {
