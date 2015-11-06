@@ -72,31 +72,35 @@ b {
 			background: none;
 			margin-bottom: 0;
 		}
-		li {
-			background-color: lighten($color-master, 49%);
+	}
+	li {
+		background-color: lighten($color-master, 49%);
+		&:nth-child(even) {
+			background-color: lighten($color-master, 51%);
+		}
+		@include breakpoint(tablet) {
+			padding: 0;
+			background-color: transparent;
 			&:nth-child(even) {
-				background-color: lighten($color-master, 51%);
-			}
-			@include breakpoint(tablet) {
-				padding: 0;
 				background-color: transparent;
-				&:nth-child(even) {
-					background-color: transparent;
-				}
-				&.active {
-					background-color: rgba(255, 255, 255, 0.1);
-				}
+			}
+			&.active {
+				background-color: rgba(255, 255, 255, 0.1);
 			}
 		}
-		a {
-			padding: 5px 10px;
-			color: $black;
-			text-decoration: none;
-			text-transform: uppercase;
-			display: block;
-			@include breakpoint(tablet) {
-				color: $white;
-			}
+	}
+	a {
+		padding: 5px 10px;
+		color: $black;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: block;
+		@include breakpoint(tablet) {
+			color: $white;
+		}
+		&:hover {
+			//background: lighten($color-master, 5%);
+			background: rgba(255,255,255,.1);
 		}
 	}
 	.btn-responsive-menu {
@@ -268,16 +272,21 @@ section {
 	}
 }
 
-%thickButton {
+@mixin thickButton {
 	background: white;
 	border-color: $color-master;
 	border-style: solid;
 	color: $color-master;
 	text-transform: uppercase;
+	transition: all .2s;
+	&:hover {
+		background: $color-master;
+		color: white;
+	}
 }
 
 .joinUs {
-	@extend %thickButton;
+	@include thickButton;
 	padding: 10px 40px;
 	font-weight: 400;
 	font-size: 24px;
@@ -295,7 +304,7 @@ section {
 	text-align: center;
 	margin-top: 15px;
 	a {
-		@extend %thickButton;
+		@include thickButton;
 		padding: 5px 20px;
 		font-size: 16px;
 		text-decoration: none;
