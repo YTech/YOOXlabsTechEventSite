@@ -22,7 +22,7 @@
 	    <link rel="icon" type="image/png" sizes="16x16" href="img_optim/favicons/favicon-16x16.png">
 	    <!-- END FAVICON -->
         <link rel="stylesheet" href="css/main.css">
-	    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+	    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		    <defs>
 			    <symbol id="icon-menu" viewBox="0 0 1024 1024">
@@ -474,13 +474,13 @@
 			    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
 				    return;
 			    }
-			    var fontNunito300 = new w.FontFaceObserver("Nunito", {
-				    weight: 300
-			    });
-			    var fontNunito400 = new w.FontFaceObserver("Nunito", {
+			    var fontLato400 = new w.FontFaceObserver("Lato", {
 				    weight: 400
 			    });
-			    w.Promise.all([fontNunito300.check(), fontNunito400.check()]).then(function () {
+			    var fontLato700 = new w.FontFaceObserver("Lato", {
+				    weight: 700
+			    });
+			    w.Promise.all([fontLato400.check(), fontLato700.check()]).then(function () {
 				    w.document.documentElement.className += " fonts-loaded";
 			    });
 		    }(window));
