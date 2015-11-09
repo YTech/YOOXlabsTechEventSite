@@ -253,6 +253,9 @@ section {
 			margin-bottom: 15px;
 			margin-left: 0;
 		}
+		a {
+			color: $color-master;
+		}
 	}
 	&.map {
 		max-width: 100%;
