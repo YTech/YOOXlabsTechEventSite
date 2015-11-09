@@ -10,13 +10,13 @@ body {
 	}
 
 	.fonts-loaded & {
-		font-family: 'Lato', sans-serif;;
+		font-family: 'Avenir', sans-serif;
 	}
 }
 
-strong,
-b {
-	font-weight: 700;
+h1 {
+	font-family: 'Chronicle', sans-serif;
+	font-weight: bold;
 }
 
 .outdatedBrowser {
@@ -157,17 +157,8 @@ section {
 			border: 0 none;
 			margin: 30px 0;
 			line-height: 1em;
-
-			.techevent {
-				display: block;
-				font-size: 26px;
-				margin-bottom: .3em;
-			}
-			.subtitle {
-				color: $color-master;
-				font-size: 40px;
-			}
-
+			color: $color-master;
+			font-size: 40px;
 		}
 		.data {
 			font-size: 18px;
@@ -281,6 +272,7 @@ section {
 	color: $color-master;
 	text-transform: uppercase;
 	transition: all .2s;
+	font-family: inherit;
 	&:hover {
 		background: $color-master;
 		color: white;

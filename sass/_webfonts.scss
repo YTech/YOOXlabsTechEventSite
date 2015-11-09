@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/AvenirLTComBook.woff2') format('woff2'),
+	url('../fonts/AvenirLTComBook.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/AvenirLTComBlack.woff2') format('woff2'),
+		url('../fonts/AvenirLTComBlack.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Chronicle';
+	src: url('../fonts/ChronicleDispLight.woff2') format('woff2'),
+		url('../fonts/ChronicleDispLight.ttf') format('truetype');
+	font-weight: bold;
+}
