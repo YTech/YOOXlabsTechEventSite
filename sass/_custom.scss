@@ -286,6 +286,7 @@ section {
 
 .joinUs {
 	@include thickButton;
+	box-sizing: border-box;
 	padding: 10px 40px;
 	font-weight: 700;
 	font-size: 24px;
@@ -293,6 +294,7 @@ section {
 	display: block;
 	cursor: pointer;
 	border-width: 3px;
+	text-decoration: none;
 	@include breakpoint(tablet) {
 		width: auto;
 		display: inline-block;
@@ -308,8 +310,12 @@ section {
 		font-size: 16px;
 		text-decoration: none;
 		color: $color-master;
-		display: inline-block;
+		display: block;
 		border-width: 2px;
+		@include breakpoint(tablet) {
+			width: auto;
+			display: inline-block;
+		}
 	}
 }
 
