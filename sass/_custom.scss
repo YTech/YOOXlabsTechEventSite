@@ -235,6 +235,9 @@ section {
 			}
 		}
 	}
+	&.about {
+		text-align: center;
+	}
 	&.faqs {
 		dt {
 			color: $color-master;
@@ -366,4 +369,8 @@ footer {
 	p {
 		margin-bottom: 0;
 	}
+}
+
+.nobr {
+	white-space: nowrap;
 }
