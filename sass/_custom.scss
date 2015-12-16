@@ -15,9 +15,10 @@ body {
 }
 
 h1 {
+	font-family: serif;
 	font-weight: bold;
 	.fonts-loaded & {
-		font-family: 'Chronicle', sans-serif;
+		font-family: 'Chronicle', serif;
 	}
 }
 
